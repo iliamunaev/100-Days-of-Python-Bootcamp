@@ -1,6 +1,6 @@
 # Day 1
 
-> ## Day goals:
+> ## Day topics:
 >
 >1.1. **String** definition  
 >1.2. **Print()** function  
@@ -32,7 +32,7 @@ print("This is my first code")
 print("I live in Helsinki")
 ```
 
-### 1.3. \n escape operator  
+### 1.3. Escape operator \n  
 
 > #### **_\n is a type of escape character that will create a new line when used._**
 
@@ -131,6 +131,13 @@ user = input('Enter your name: ')
 print(user)
 ```
 
+#### Rules for Python variables:
+
+- A variable name must start with a letter or the underscore character
+- A variable name cannot start with a number
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+- Variable names are case-sensitive (age, Age and AGE are three different variables)
+
 ### Resources:
 
 <https://en.wikipedia.org/wiki/String_(computer_science)>  
@@ -139,6 +146,7 @@ print(user)
 <https://careerkarma.com/blog/python-concatenate-strings/>  
 <https://www.geeksforgeeks.org/taking-input-in-python/>  
 <https://docs.python.org/3/library/functions.html#input>  
+<https://www.w3schools.com/python/gloss_python_variable_names.asp>  
 
 
 
