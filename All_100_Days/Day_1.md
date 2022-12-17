@@ -1,14 +1,14 @@
-# Day 1
+# Day 1: string, variables, print(), input(), len(), \n, +
 
 > ## Day topics:
 >
->1.1. **String** definition  
->1.2. **Print()** function  
->1.3. Escape operator **\n**  
->1.4. Concatenate strings using **addition (+) operator**  
->1.5. **Input()** function  
->1.6. **Len()** function  
->1.7. **Variables:** definition, naming, changing  
+>[1.1. **String** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#11-string)    
+>[1.2. **Print()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#12-print-function)  
+>[1.3. Escape operator **\n**](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#13-escape-operator-n)  
+>[1.4. Concatenate strings using **addition (+) operator**](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#14-concatenate-strings-using-operator-)  
+>[1.5. **Input()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#15-input-function)  
+>[1.6. **Len()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#16-len-function)  
+>[1.7. **Variables:** definition, naming, changing](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#17-variables-definition-naming-changing)  
 >1.8. Day project
 
 ### 1.1. String
@@ -133,10 +133,10 @@ print(user)
 
 #### Rules for Python variables:
 
-- A variable name must start with a letter or the underscore character
-- A variable name cannot start with a number
-- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-- Variable names are case-sensitive (age, Age and AGE are three different variables)
+- A variable name must start with a letter or the underscore character.
+- A variable name cannot start with a number.
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+- Variable names are case-sensitive (age, Age and AGE are three different variables).
 
 ### Resources:
 
