@@ -3,11 +3,11 @@
 > ## Day goals:
 >
 >1.1. **String** definition  
->1.2. **print()** function  
->1.3. **\n** escape operator  
+>1.2. **Print()** function  
+>1.3. Escape operator **\n**  
 >1.4. Concatenate strings using **addition (+) operator**  
->1.5. **input()** function  
->1.6. **len()** function  
+>1.5. **Input()** function  
+>1.6. **Len()** function  
 >1.7. **Variables:** definition, naming, changing  
 >1.8. Day project
 
@@ -74,9 +74,12 @@ The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
 When the user presses enter, the program resumes and returns what the user typed. 
 
+_**Example 1:**_
+
 ```python
 input('Enter your name: ')
 ```
+_**Example 2:**_
 
 ```python
 print(input('Enter your name: '))
@@ -90,9 +93,12 @@ The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
 When the user presses enter, the program resumes and returns what the user typed. 
 
+_**Example 1:**_
+
 ```python
 len('Markus')
 ```
+_**Example 2:**_
 
 ```python
 print(len('Markus'))
@@ -106,14 +112,19 @@ Python variable is the basic unit of storage in a program.
 A variable is created automatically when you assign a value to it.   
 The equal sign (=) is used to assign values to variables.
 
+_**Example 1:**_
+
 ```python
 user = 'Piter'
 ```
+
+_**Example 2:**_
 
 ```python
 user = 'Piter'
 print(user)
 ```
+_**Example 3:**_
 
 ```python
 user = input('Enter your name: ')
