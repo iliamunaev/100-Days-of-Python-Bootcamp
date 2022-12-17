@@ -27,7 +27,7 @@ The message can be a string, or any other object, the object will be converted i
 ```python
 print("Hello World")
 print("This is my first code")
-Print("I live in Helsinki")
+print("I live in Helsinki")
 ```
  
 ### 1.3. \n escape operator  
@@ -44,10 +44,25 @@ print("Hello World.\nThis is my first code.\nI live in Helsinki.")
 > #### **_The + operator (or addition operator) lets you combine two or more strings._**
   
 This operator is referred to as the Python string concatenation operator.  
-The + operator should appear between the two strings you want to merge.
+The + operator should appear between the two strings you want to merge.  
+Don't forget to add space between words in the sentence.
+
+_**Solution 1:** adding space at the end of the first word inside the brackets_
 
 ```python
-print("Address: " + "Helsinki")
+print("Hello " + "World")
+```
+
+_**Solution 2:** adding space at the beginning of the second word inside the brackets_
+
+```python
+print("Hello" + " World")
+```
+
+_**Solution 3:** adding space between the words using space inside a new pair of brackets_
+
+```python
+print("Hello" + " " + "World")
 ```
 
 ### Resources:
@@ -55,7 +70,7 @@ print("Address: " + "Helsinki")
 <https://en.wikipedia.org/wiki/String_(computer_science)>  
 <https://www.w3schools.com/python/ref_func_print.asp>  
 <https://realpython.com/python-print/>  
-<https://careerkarma.com/blog/python-concatenate-stri>  
+<https://careerkarma.com/blog/python-concatenate-strings/>  
 
 
 
