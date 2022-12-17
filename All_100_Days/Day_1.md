@@ -34,7 +34,7 @@ print("I live in Helsinki")
 
 Output:
 
-![print_function_ex_1](/assets/giphy/print_function_1.gif)
+![print_function_ex_1](/assets/giphy/print_function_1.2.gif)
 
 ### 1.3. \n escape operator  
 
