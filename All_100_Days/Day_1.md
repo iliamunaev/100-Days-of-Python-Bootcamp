@@ -2,12 +2,14 @@
 
 > ## Day goals:
 >
->1.1. **String** definition   
+>1.1. **String** definition  
 >1.2. **print()** function  
 >1.3. **\n** escape operator  
->1.4. Concatenate strings using **+** operator
-
-
+>1.4. Concatenate strings using **addition (+) operator**  
+>1.5. **input()** function  
+>1.6. **len()** function  
+>1.7. **Variables:** definition, naming, changing  
+>1.8. Day project
 
 ### 1.1. String
 
@@ -40,10 +42,10 @@ print("Hello World.\nThis is my first code.\nI live in Helsinki.")
 
 ### 1.4. Concatenate strings using operator +
 
-> #### **_The + operator (or addition operator) lets you combine two or more strings._**
+> #### **_The (+) operator (or addition operator) lets you combine two or more strings._**
   
-This operator is referred to as the Python string concatenation operator.  
-The + operator should appear between the two strings you want to merge.  
+The addition operator (+) is referred to as the Python string concatenation operator.  
+The operator should appear between the two strings you want to merge.  
 Don't forget to add space between words in the sentence.
 
 _**Solution 1:** adding space at the end of the first word inside the brackets_
@@ -64,12 +66,69 @@ _**Solution 3:** adding space between the words using space inside a new pair of
 print("Hello" + " " + "World")
 ```
 
+### 1.5. Input() function
+
+> #### **_The input() function reads a line from input, converts it to a string, and returns that._**
+
+The function is a way of asking the user to provide some type of input.
+When the input function is called it stops the program and waits for the user’s input. 
+When the user presses enter, the program resumes and returns what the user typed. 
+
+```python
+input('Enter your name: ')
+```
+
+```python
+print(input('Enter your name: '))
+```
+
+### 1.6. Len() function
+
+> #### **_The len() function return the length (the number of items) of an object._**
+
+The function is a way of asking the user to provide some type of input.
+When the input function is called it stops the program and waits for the user’s input. 
+When the user presses enter, the program resumes and returns what the user typed. 
+
+```python
+len('Markus')
+```
+
+```python
+print(len('Markus'))
+
+```
+### 1.7. Variables: definition, naming, changing  
+
+> #### **_Variable is a name that is used to refer to memory location._**
+
+Python variable is the basic unit of storage in a program.  
+A variable is created automatically when you assign a value to it.   
+The equal sign (=) is used to assign values to variables.
+
+```python
+user = 'Piter'
+```
+
+```python
+user = 'Piter'
+print(user)
+```
+
+```python
+user = input('Enter your name: ')
+print(user)
+```
+
 ### Resources:
 
 <https://en.wikipedia.org/wiki/String_(computer_science)>  
 <https://www.w3schools.com/python/ref_func_print.asp>  
 <https://realpython.com/python-print/>  
 <https://careerkarma.com/blog/python-concatenate-strings/>  
+<https://www.geeksforgeeks.org/taking-input-in-python/>  
+<https://docs.python.org/3/library/functions.html#input>  
+
 
 
 
