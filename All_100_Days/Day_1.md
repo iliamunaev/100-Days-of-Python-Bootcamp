@@ -24,12 +24,18 @@ Strings are useful for storing human-readable data, like sentences, or lists of 
 
 The message can be a string, or any other object, the object will be converted into a string before written to the screen.
 
+Input:
+
 ```python
 print("Hello World")
 print("This is my first code")
 print("I live in Helsinki")
 ```
- 
+
+Output:
+
+![rint_function_1]/assets/giphy/print_function_1.gif
+
 ### 1.3. \n escape operator  
 
 > #### **_\n is a type of escape character that will create a new line when used._**
