@@ -40,10 +40,15 @@ Output:
 
 > #### **_\n is a type of escape character that will create a new line when used._**
 
+Input:
 
 ```python
 print("Hello World.\nThis is my first code.\nI live in Helsinki.")
 ```
+
+Output:
+
+![print_function_ex_1](/assets/giphy/print_function_ex_2.gif)
 
 ### 1.4. Concatenate strings using operator +
 
