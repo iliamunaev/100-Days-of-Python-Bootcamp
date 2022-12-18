@@ -49,8 +49,8 @@ number_1 = number_2
 _**Example 1:**_
 
 ```python
-# Convert a string "5.5" into an integer
-num = int("5.5")
+# Convert a string "55" into an integer
+num = int("55")
 print(type(num))
 ```
 
@@ -113,36 +113,38 @@ print(type(num_as_float))
 
 ### 1.3. Boolean  
 
-> #### **_\n is a type of escape character that will create a new line when used._**
+> #### **Boolean means a result that can only have one of two possible values: true or false._**
+
+Boolean logic takes two statements or expressions and applies a logical operator to generate a Boolean value that can be either true or false. 
+
+![Boolean_logic_exaple](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/Boolean_logic.png)
+
+When you compare two values, the expression is evaluated and Python returns the Boolean answer.
+
+_**Example 1:**_
 
 ```python
-print("Hello World.\nThis is my first code.\nI live in Helsinki.")
+print(10 > 9)  #Returns True
+print(7 == 9)  #Returns False
+print(1 < 9)  #Returns True
 ```
 
 ### 1.4. Type() function
 
-> #### **_The (+) operator (or addition operator) lets you combine two or more strings._**
+> #### **_Type() function returns the type of the objects/data elements stored in any data type ._**
   
-The addition operator (+) is referred to as the Python string concatenation operator.  
-The operator should appear between the two strings you want to merge.  
-Don't forget to add space between words in the sentence.
+TIn Python, we do not explicitly specify the data type of the variable for storing data elements.  
+Hence, if we want to find out what type of data is stored in a variable we use Python’s built-in type() function.
 
-_**Solution 1:** adding space at the end of the first word inside the brackets_
-
-```python
-print("Hello " + "World")
-```
-
-_**Solution 2:** adding space at the beginning of the second word inside the brackets_
+_**Example 1:**_
 
 ```python
-print("Hello" + " World")
-```
-
-_**Solution 3:** adding space between the words using space inside a new pair of brackets_
-
-```python
-print("Hello" + " " + "World")
+username = "Sara"
+age = 18
+distance_marathon = 42.092
+print(type(username))  # Returns <class 'str'>
+print(type(age))  # Returns <class 'int'>
+print(type(distance_marathon))  # Returns <class 'float'>
 ```
 
 ### 1.5. Arithmetic operators
@@ -158,6 +160,7 @@ _**Example 1:**_
 ```python
 input('Enter your name: ')
 ```
+
 _**Example 2:**_
 
 ```python
@@ -238,6 +241,11 @@ print("Call us now and get 10% discount!")
 <https://www.w3schools.com/python/python_numbers.asp> 
 <https://www.geeksforgeeks.org/python-int-function/>  
 <https://www.geeksforgeeks.org/python-float-type-and-its-methods/>
+<https://www.techtarget.com/whatis/definition/Boolean#:~:text=In%20computing%2C%20the%20term%20Boolean,are%20used.>  
+<https://www.w3schools.com/python/python_booleans.asp>  
+<https://www.geeksforgeeks.org/python-type-function/>  
+
+
 
 
 
