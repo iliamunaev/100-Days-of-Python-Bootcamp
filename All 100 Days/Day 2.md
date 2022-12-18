@@ -2,33 +2,113 @@
 
 > ## Day topics:
 >
->[1.1. **Integer** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#11-string)    
->[1.2. **Float** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#12-print-function)  
->[1.3. **Boolean** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#13-escape-operator-n)  
->[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#14-concatenate-strings-using-operator-)  
->[1.5. **Arithmetic** operators](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#15-input-function)  
->[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#16-len-function)  
->[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#18-day-project-username-generator)  
+>[1.1. **Integer** definition and **int()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#11-integer-and-int-function)    
+>[1.2. **Float** definition and **float()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#12-float-and-float-function)  
+>[1.3. **Boolean** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#13-boolean)  
+>[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#14-type-function) 
+>[1.5. **Arithmetic** operators](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#15-arithmetic-operators)  
+>[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#16-round-function)  
+>[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#17-day-projects)  
 
 ### 1.1. Integer and int() function
 
-> #### **_The technical description of a string is: an array of characters. The informal view of a string is a sentence._**
+> #### **_Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_**
 
-Strings are almost always written in code as a quoted sequence of characters, i.e., "this is a string".  
-Strings are useful for storing human-readable data, like sentences, or lists of alphabetical data, like the nucleic acid sequences of DNA.
+All integer literals or variables are objects of the int class.  
 
-![String exaple](/assets/images/String_Variable_Diagram_Middle_Aspect_Ratio.png)
+_**Example 1:**_
+
+```python
+# Those are integers
+integer_one = 2
+integer_two = 8974
+ineger_three = -894
+```
+
+Leading zeros in non-zero integers are not allowed e.g. 000123 is invalid number, 0000 is 0.  
+
+_**Example 2:**_
+
+```python
+x=012
+SyntaxError:leading zeros in decimal integer literals are not permitted
+```
+
+Python does not allow comma as number delimiter. Use underscore _ as a delimiter instead.  
+
+_**Example 3:**_
+
+```python
+number_1 = 123_456_789
+number_2 = 123456789
+number_1 = number_2
+```
+
+> #### **_Int() function returns an integer from a given object or converts a number in a given base to a decimal._**
+
+_**Example 1:**_
+
+```python
+# Convert a string "5.5" into an integer
+num = int("5.5")
+print(type(num))
+```
+
+_**Example 2:**_
+
+```python
+# Convert an input value string class into an integer class
+num = int(input("Type in a number: "))
+print(type(num))
+```
+
+_**Example 3:**_
+
+```python
+num = input("Type in a number: ")
+num_as_int = int(num)
+print(type(num_as_int))
+```
 
 ### 1.2. Float and float() function
 
-> #### **_The print() function prints the specified message to the screen, or other standard output device._**
+> #### **_The float type in Python represents the floating point number._**
 
-The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+Float is used to represent real numbers and is written with a decimal point dividing the integer and fractional parts. 
+
+_**Example:**_
 
 ```python
-print("Hello World")
-print("This is my first code")
-print("I live in Helsinki")
+# Those are float numbers
+float_num_1 = 2.5
+float_num_2 = 0.777
+float_num_3 = -3.87
+```
+
+> #### **_Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point. _**
+
+_**Example 1:**_
+
+```python
+# Convert a string "8.5" into an integer
+num = float("8.5")
+print(type(num))
+```
+
+_**Example 2:**_
+
+```python
+# Convert an input value string class into a float class
+num = float(input("Type in a number: "))
+print(type(num))
+```
+
+_**Example 3:**_
+
+```python
+num = input("Type in a number: ")
+num_as_float = float(num)
+print(type(num_as_float))
 ```
 
 ### 1.3. Boolean  
@@ -109,10 +189,10 @@ print(len('Markus'))
 #### Bootcamp day project: Tip calculator
 
 ```python
-##If the bill was $150.00, split between 5 people, with 12% tip. 
-#Each person should pay (150.00 / 5) * 1.12 = 33.6
-#Format the result to 2 decimal places = 33.60
-#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+# If the bill was $150.00, split between 5 people, with 12% tip. 
+# Each person should pay (150.00 / 5) * 1.12 = 33.6
+# Format the result to 2 decimal places = 33.60
+# Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 print("Welcom to the tip calculator.")
 bill = float(input("What was the total bill? $"))
@@ -154,20 +234,19 @@ print("Call us now and get 10% discount!")
 
 ### Resources:
 
-<https://en.wikipedia.org/wiki/String_(computer_science)>  
-<https://www.w3schools.com/python/ref_func_print.asp>  
-<https://realpython.com/python-print/>  
-<https://careerkarma.com/blog/python-concatenate-strings/>  
-<https://www.geeksforgeeks.org/taking-input-in-python/>  
-<https://docs.python.org/3/library/functions.html#input>  
-<https://www.w3schools.com/python/gloss_python_variable_names.asp>  
+<https://www.tutorialsteacher.com/python/python-number-type>  
+<https://www.w3schools.com/python/python_numbers.asp> 
+<https://www.geeksforgeeks.org/python-int-function/>  
+<https://www.geeksforgeeks.org/python-float-type-and-its-methods/>
+
+
 
 ---
 
 [> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
 [> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
 
-[>TO THE DAY 2]
+[TO THE DAY 1 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%201.md)
 
 
 
