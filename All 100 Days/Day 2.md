@@ -70,6 +70,23 @@ num_as_int = int(num)
 print(type(num_as_int))
 ```
 
+#### Extract a character by index
+
+You can get a character at the desired position by specifying an index in [ ].  
+Indexes begin with 0 (zero-based indexing).
+
+>Zero-based array indexing is a way of numbering the items in an array such that the first item of it has an index of 0,
+>whereas a one-based array indexed array has its first item indexed as 1. 
+
+_**Example:**_
+
+```python
+username = "MaxToronto"
+print(username[0])  # Pull out "M"
+print(username[1])   # Pull out "a"
+print(username[3])   # Pull out "T"
+```
+
 ### 1.2. Float and float() function
 
 > #### **_The float type in Python represents the floating point number._**
@@ -184,42 +201,87 @@ print(result)
 
 ### 1.5. Arithmetic operators
 
-> #### **_The input() function reads a line from input, converts it to a string, and returns that._**
+> #### **_Arithmetic operators are used with numeric values to perform common mathematical operations:_**
 
-The function is a way of asking the user to provide some type of input.
-When the input function is called it stops the program and waits for the user’s input. 
-When the user presses enter, the program resumes and returns what the user typed. 
+- **Addition** (+) 
+- **Subtraction** (-) 
+- **Multiplication** (*)
+- **Division** (/)
+- **Exponentiation** (**)
 
-_**Example 1:**_
-
-```python
-input('Enter your name: ')
-```
-
-_**Example 2:**_
+_**Examples:**_
 
 ```python
-print(input('Enter your name: '))
+print(2 + 2)
 ```
+
+
+```python
+print(4 - 2)
+```
+
+```python
+print(2 * 2)
+```
+
+```python
+print(6 / 2)
+```
+
+```python
+print(3 ** 2)
+```
+
+#### PEMDAS is the level of execution priority
+
+The range from the highest to the lowest priority:
+
+**P** is parentheses.  
+**E** is exponentiation.  
+**M** is multiplication.  
+**D** is division.  
+**A** is addition.  
+**S** is subtraction. 
+
+#### BUT
+
+Multiplication = Division, and have the same level of priority  
+Addition = Subtraction, and have the same level of priority
+
+>#### In this situation, execution goes from the left side of the example to the right
 
 ### 1.6. Round() function
 
-> #### **_The len() function return the length (the number of items) of an object._**
+> #### **_The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._**
 
-The function is a way of asking the user to provide some type of input.
-When the input function is called it stops the program and waits for the user’s input. 
-When the user presses enter, the program resumes and returns what the user typed. 
+The default number of decimals is 0, meaning that the function will return the nearest integer.
 
 _**Example 1:**_
 
 ```python
-len('Markus')
+x = round(5.2)
+print(x)  # Returns 5
 ```
+
 _**Example 2:**_
 
 ```python
-print(len('Markus'))
+x = round(5.7)
+print(x)  # Returns 6
+```
 
+We can assign how many number of decimals to use when rounding the number.
+
+_**Example 1:**_
+
+```python
+x = round(5.589, 2)
+print(x)  # Returns 5.59
+```
+
+```python
+x = round(75.98991458, 3)
+print(x)  # Returns 75.99
 ```
 
 ### 1.7. Day projects
@@ -279,10 +341,9 @@ print("Call us now and get 10% discount!")
 <https://www.techtarget.com/whatis/definition/Boolean#:~:text=In%20computing%2C%20the%20term%20Boolean,are%20used.>  
 <https://www.w3schools.com/python/python_booleans.asp>  
 <https://www.geeksforgeeks.org/python-type-function/>  
-
-
-
-
+<https://note.nkmk.me/en/python-str-extract/>  
+<https://medium.com/analytics-vidhya/array-indexing-0-based-or-1-based-dd89d631d11c>  
+<https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp>  
 
 ---
 
@@ -290,8 +351,3 @@ print("Call us now and get 10% discount!")
 [> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
 
 [TO THE DAY 1 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%201.md)
-
-
-
-
-
