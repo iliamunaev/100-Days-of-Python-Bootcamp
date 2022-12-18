@@ -314,7 +314,7 @@ print("Calculate the price for our service.")
 square = float(input("How many sq.meters in your apartment: "))
 windows = int(input("How many windows in your apartment: "))
 doors = int(input("How many doors in your apartment: "))
-pets = int(input("Do you have pats in the apartment? If no type in '0', if you have type in '1': "))
+pets = int(input("Do you have pets in the apartment? If no type in '0', if you have type in '1': "))
 price_base = 15
 
 # Calculating a cost based on the input and multiplying on indexes if applicable
@@ -322,12 +322,13 @@ price_on_square = price_base * square
 price_on_windows = price_base * windows * 1.4
 price_on_doors = price_base * doors * 1.2
 price_on_pets = price_base * pets * 20
-price = price_on_square + price_on_windows + price_on_doors + price_on_pets
+price = round((price_on_square + price_on_windows + price_on_doors + price_on_pets), 2)
 
 # Calculating a cost based on the start date of the service
-price_urgent = price * 1.3
-print(f"Total price for cleaning service is:\nWe start tomorrow or later: {price}\nWe start today: {price_urgent}")
+price_urgent = round((price * 1.3), 2)
+print(f"Total price for cleaning service is:\nWe start tomorrow or later: ${price}\nWe start today: ${price_urgent}")
 print("Call us now and get 10% discount!")
+
 ````
 
 ---
