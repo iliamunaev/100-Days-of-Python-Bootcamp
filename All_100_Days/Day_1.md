@@ -210,7 +210,7 @@ print("Your Username is: " + first_name + "_" + last_name + "_" + length_first_n
 
 ---
 
-[> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)
+[> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
 [> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
 
 [>TO THE DAY 2]
