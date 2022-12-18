@@ -5,7 +5,7 @@
 >[1.1. **Integer** definition and **int()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#11-integer-and-int-function)    
 >[1.2. **Float** definition and **float()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#12-float-and-float-function)  
 >[1.3. **Boolean** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#13-boolean)  
->[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#14-type-function) 
+>[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#14-type-function)  
 >[1.5. **Arithmetic** operators](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#15-arithmetic-operators)  
 >[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#16-round-function)  
 >[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#17-day-projects)  
@@ -145,6 +145,41 @@ distance_marathon = 42.092
 print(type(username))  # Returns <class 'str'>
 print(type(age))  # Returns <class 'int'>
 print(type(distance_marathon))  # Returns <class 'float'>
+```
+
+#### Exercise
+
+Find a sum of two numbers, which the user type in the request
+
+_**Solution 1:**_
+
+```python
+two_digit_number = input("Type a two digit number: ")
+char_1 = two_digit_number[0]  # Pull out character number 1
+char_2 = two_digit_number[1]  # Pull out character number 2
+char_1_int = int(char_1)  # Convert character 1 from string to integer class
+char_2_int = int(char_2)  # Convert character 2 from string to integer class
+result = char_1_int + char_2_int
+print(result)
+```
+
+_**Solution 2:**_
+
+```python
+two_digit_number = input("Type a two digit number: ")
+char_1 = int(two_digit_number[0])   # Pull out and convert character number 1 from string to integer class
+char_2 = int(two_digit_number[1])  # Pull out and convert character number 2 from string to integer class
+result = char_1 + char_2
+print(result)
+```
+
+_**Solution 3:**_
+
+```python
+two_digit_number = input("Type a two digit number: ")
+char_1, char_2 = two_digit_number[0], two_digit_number[1]
+result = int(char_1) + int(char_2)
+print(result)
 ```
 
 ### 1.5. Arithmetic operators
