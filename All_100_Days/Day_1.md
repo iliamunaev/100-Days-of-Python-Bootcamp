@@ -188,7 +188,9 @@ a, b = b, a
 <https://docs.python.org/3/library/functions.html#input>  
 <https://www.w3schools.com/python/gloss_python_variable_names.asp>  
 
-TO THE NEXT DAY
+![to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)
+
+TO THE DAY 2
 
 
 
