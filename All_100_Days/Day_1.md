@@ -131,12 +131,52 @@ user = input('Enter your name: ')
 print(user)
 ```
 
+> ### Naming variables: make your code readable!
+
 #### Rules for Python variables:
 
 - A variable name must start with a letter or the underscore character.
 - A variable name cannot start with a number.
 - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
 - Variable names are case-sensitive (age, Age and AGE are three different variables).
+
+_**Valid Python variable names:**_
+
+```python
+user_name = "Alex"
+_user_name = "Alex"
+username = "Alex"
+Username = "Alex"
+UserName = "Alex"
+USERNAME = "Alex"
+user_name_2= "Alex"
+```
+
+_**Invalid Python variable names:**_
+
+```python
+2_user_name = "Alex"
+user-name = "Alex"
+user name = "Alex"
+```
+
+#### Change variables
+
+How to interchange the value of two variables.
+
+_**Example 1:** using the 3rd varible:_ 
+
+```python
+c = a
+a = b
+b = c
+```
+
+_**Example 2:** without 3rd varible:_
+
+```python
+a, b = b, a
+```
 
 ### Resources:
 
@@ -148,6 +188,7 @@ print(user)
 <https://docs.python.org/3/library/functions.html#input>  
 <https://www.w3schools.com/python/gloss_python_variable_names.asp>  
 
+TO THE NEXT DAY
 
 
 
