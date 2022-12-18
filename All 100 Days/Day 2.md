@@ -12,7 +12,7 @@
 
 ### 1.1. Integer and int() function
 
-> #### **_Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_**
+> #### _Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_
 
 All integer literals or variables are objects of the int class.  
 
@@ -44,7 +44,7 @@ number_2 = 123456789
 number_1 = number_2
 ```
 
-> #### **_Int() function returns an integer from a given object or converts a number in a given base to a decimal._**
+> #### _Int() function returns an integer from a given object or converts a number in a given base to a decimal._
 
 _**Example 1:**_
 
@@ -89,7 +89,7 @@ print(username[3])   # Pull out "T"
 
 ### 1.2. Float and float() function
 
-> #### **_The float type in Python represents the floating point number._**
+> #### _The float type in Python represents the floating point number._
 
 Float is used to represent real numbers and is written with a decimal point dividing the integer and fractional parts. 
 
@@ -102,7 +102,7 @@ float_num_2 = 0.777
 float_num_3 = -3.87
 ```
 
-> #### **_Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point. _**
+> #### _Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point._
 
 _**Example 1:**_
 
@@ -130,7 +130,7 @@ print(type(num_as_float))
 
 ### 1.3. Boolean  
 
-> #### **Boolean means a result that can only have one of two possible values: true or false._**
+> #### _Boolean means a result that can only have one of two possible values: true or false._
 
 Boolean logic takes two statements or expressions and applies a logical operator to generate a Boolean value that can be either true or false. 
 
@@ -148,7 +148,7 @@ print(1 < 9)  #Returns True
 
 ### 1.4. Type() function
 
-> #### **_Type() function returns the type of the objects/data elements stored in any data type ._**
+> #### _Type() function returns the type of the objects/data elements stored in any data type ._
   
 TIn Python, we do not explicitly specify the data type of the variable for storing data elements.  
 Hence, if we want to find out what type of data is stored in a variable we use Python’s built-in type() function.
@@ -201,7 +201,7 @@ print(result)
 
 ### 1.5. Arithmetic operators
 
-> #### **_Arithmetic operators are used with numeric values to perform common mathematical operations:_**
+> #### _Arithmetic operators are used with numeric values to perform common mathematical operations:_
 
 - **Addition** (+) 
 - **Subtraction** (-) 
@@ -248,11 +248,11 @@ The range from the highest to the lowest priority:
 Multiplication = Division, and have the same level of priority  
 Addition = Subtraction, and have the same level of priority
 
->#### In this situation, execution goes from the left side of the example to the right
+>#### _In this situation, execution goes from the left side of the example to the right._
 
 ### 1.6. Round() function
 
-> #### **_The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._**
+> #### _The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._
 
 The default number of decimals is 0, meaning that the function will return the nearest integer.
 
