@@ -9,7 +9,7 @@
 >[1.5. **Input()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#15-input-function)  
 >[1.6. **Len()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#16-len-function)  
 >[1.7. **Variables:** definition, naming, changing](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#17-variables-definition-naming-changing)  
->1.8. Day project
+>[1.8. **Day project:**  Username generator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#18-day-project-username-generator)
 
 ### 1.1. String
 
@@ -177,6 +177,24 @@ _**Example 2:** without 3rd varible:_
 ```python
 a, b = b, a
 ```
+
+### 1.8. Day project: Username generator
+
+```python
+# The username generator creates a username based on a first and a last name of the user.
+# The uniqueness of the name is given also by the number added to the end of the name
+# which is a combination of two integers.
+# The numbers are equivalent to the length of the first and the last name of the user.
+print('Welcome to the "Username Generator".')
+first_name = input("Type in your first name: ")
+last_name = input("Type in your last name: ")
+
+# Count number of characters of the first and the last names
+# and convert them from integer to string.
+length_first_name = str(len(first_name))
+length_last_name = str(len(last_name))
+print("Your Username is: " + first_name + "_" + last_name + "_" + length_first_name + length_last_name)
+````
 
 ---
 
