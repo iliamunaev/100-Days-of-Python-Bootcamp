@@ -1,4 +1,4 @@
-# Day 2: integer, float, boolean, type(), arithmetic operators, round()
+# Day 2: integer and int() function, float and float() function, boolean, type(), arithmetic operators, round()
 
 > ## Day topics:
 >
@@ -10,7 +10,7 @@
 >[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#16-len-function)  
 >[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All_100_Days/Day_1.md#18-day-project-username-generator)  
 
-### 1.1. Integer
+### 1.1. Integer and int() function
 
 > #### **_The technical description of a string is: an array of characters. The informal view of a string is a sentence._**
 
@@ -19,7 +19,7 @@ Strings are useful for storing human-readable data, like sentences, or lists of 
 
 ![String exaple](/assets/images/String_Variable_Diagram_Middle_Aspect_Ratio.png)
 
-### 1.2. Float
+### 1.2. Float and float() function
 
 > #### **_The print() function prints the specified message to the screen, or other standard output device._**
 
