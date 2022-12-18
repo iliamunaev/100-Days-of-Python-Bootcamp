@@ -1,4 +1,4 @@
-# 100 projects
+# 100 projects in one file
 
 ## Day 1: Username generator
 
