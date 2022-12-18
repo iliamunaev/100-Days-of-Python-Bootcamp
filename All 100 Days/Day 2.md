@@ -22,7 +22,7 @@ _**Example 1:**_
 # Those are integers
 integer_one = 2
 integer_two = 8974
-ineger_three = -894
+integer_three = -894
 ```
 
 Leading zeros in non-zero integers are not allowed e.g. 000123 is invalid number, 0000 is 0.  
