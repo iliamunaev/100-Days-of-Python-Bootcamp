@@ -178,6 +178,8 @@ _**Example 2:** without 3rd varible:_
 a, b = b, a
 ```
 
+---
+
 ### Resources:
 
 <https://en.wikipedia.org/wiki/String_(computer_science)>  
@@ -188,7 +190,9 @@ a, b = b, a
 <https://docs.python.org/3/library/functions.html#input>  
 <https://www.w3schools.com/python/gloss_python_variable_names.asp>  
 
-![to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)
+---
+
+[> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)
 
 TO THE DAY 2
 
