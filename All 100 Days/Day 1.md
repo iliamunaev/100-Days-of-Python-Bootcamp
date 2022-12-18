@@ -13,7 +13,7 @@
 
 ### 1.1. String
 
-> #### **_The technical description of a string is: an array of characters. The informal view of a string is a sentence._**
+> #### _The technical description of a string is: an array of characters. The informal view of a string is a sentence._
 
 Strings are almost always written in code as a quoted sequence of characters, i.e., "this is a string".  
 Strings are useful for storing human-readable data, like sentences, or lists of alphabetical data, like the nucleic acid sequences of DNA.
@@ -22,7 +22,7 @@ Strings are useful for storing human-readable data, like sentences, or lists of 
 
 ### 1.2. Print() function
 
-> #### **_The print() function prints the specified message to the screen, or other standard output device._**
+> #### _The print() function prints the specified message to the screen, or other standard output device._
 
 The message can be a string, or any other object, the object will be converted into a string before written to the screen.
 
@@ -34,7 +34,7 @@ print("I live in Helsinki")
 
 ### 1.3. Escape operator \n  
 
-> #### **_\n is a type of escape character that will create a new line when used._**
+> #### _\n is a type of escape character that will create a new line when used._
 
 ```python
 print("Hello World.\nThis is my first code.\nI live in Helsinki.")
@@ -42,7 +42,7 @@ print("Hello World.\nThis is my first code.\nI live in Helsinki.")
 
 ### 1.4. Concatenate strings using operator +
 
-> #### **_The (+) operator (or addition operator) lets you combine two or more strings._**
+> #### _The (+) operator (or addition operator) lets you combine two or more strings._
   
 The addition operator (+) is referred to as the Python string concatenation operator.  
 The operator should appear between the two strings you want to merge.  
@@ -68,7 +68,7 @@ print("Hello" + " " + "World")
 
 ### 1.5. Input() function
 
-> #### **_The input() function reads a line from input, converts it to a string, and returns that._**
+> #### _The input() function reads a line from input, converts it to a string, and returns that._
 
 The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
@@ -87,7 +87,7 @@ print(input('Enter your name: '))
 
 ### 1.6. Len() function
 
-> #### **_The len() function return the length (the number of items) of an object._**
+> #### _The len() function return the length (the number of items) of an object._
 
 The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
@@ -106,7 +106,7 @@ print(len('Markus'))
 ```
 ### 1.7. Variables: definition, naming, changing  
 
-> #### **_Variable is a name that is used to refer to memory location._**
+> #### _Variable is a name that is used to refer to memory location._
 
 Python variable is the basic unit of storage in a program.  
 A variable is created automatically when you assign a value to it.   
