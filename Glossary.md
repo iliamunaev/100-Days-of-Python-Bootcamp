@@ -1,6 +1,6 @@
 # Python Glossary
 
-### Definition of Terms used in the 100 Days of Python Bootcamp
+### Definition of Terms are used in the 100 Days of Python Bootcamp
 
 > ## A
 
