@@ -21,18 +21,22 @@ Python has 3 key Conditional statements:
 - if-elif-else ladder  
 
 >####  _if statement_ is used for decision-making operations. It contains a body of code which runs only when the condition given in the if statement is true. 
->#### These statements guide the program while making decisions based on the conditions encountered by the program.
+
+These statements guide the program while making decisions based on the conditions encountered by the program.
 
 _**Example:**_
 
 ```python
-number = 7
-# check if number is greater than 0
+nnumber = 5
+# Check if number is greater than 0
 if number > 0:
     print("Number is positive.")
+# The next line of code executes even though "if statement" is False
+name = "John"
+print(name)
 ```
 
->####  _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that >#### should justify the statement or logic.
+>####  _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that should justify the statement or logic.
 
 _**Example:**_
 
@@ -44,7 +48,7 @@ else:
     print("Negative number")
 ```
 
->####  _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif >#### and else statements to perform a series of checks.
+>####  _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif and else statements to perform a series of checks.
 
 _**Example:**_
 
@@ -73,7 +77,13 @@ if number > 10:
 
 ### 1.2. Comparison operators: >, <, >=, <=, ==, !=
 
-> #### _The float type in Python represents the floating point number._
+> #### _Comparison operators are used to compare two values._
+
+- **Addition** (+) 
+- **Subtraction** (-) 
+- **Multiplication** (*)
+- **Division** (/)
+- **Exponentiation** (**)
 
 Float is used to represent real numbers and is written with a decimal point dividing the integer and fractional parts. 
 
