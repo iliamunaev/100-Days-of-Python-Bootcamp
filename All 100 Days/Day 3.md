@@ -24,12 +24,12 @@ Python has 3 key Conditional statements:
 
 These statements guide the program while making decisions based on the conditions encountered by the program.
 
-![]<https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/if%20statement%20flowchart.drawio>
+![if statement flowchart](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/if%20statement%20flowchart.png)
 
 _**Example:**_
 
 ```python
-nnumber = 5
+number = 5
 # Check if number is greater than 0
 if number > 0:
     print("Number is positive.")
