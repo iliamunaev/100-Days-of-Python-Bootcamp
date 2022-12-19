@@ -2,92 +2,76 @@
 
 > ## Day topics:
 >
->[1.1. **Integer** definition and **int()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#11-integer-and-int-function)    
->[1.2. **Float** definition and **float()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#12-float-and-float-function)  
->[1.3. **Boolean** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#13-boolean)  
->[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#14-type-function)  
->[1.5. **Arithmetic** operators](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#15-arithmetic-operators)  
->[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#16-round-function)  
->[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#17-day-projects)  
+>[1.1. **Conditional statments:** if, elif, else](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%203.md#11-conditional-statments-if-elif-else)    
+>[1.2. **Comparison operators:** >, <, >=, <=, ==, !=](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#12-comparison-operators)  
+>[1.3. **Modulo %** ](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#13-modulo-)  
+>[1.4. **Logical operators:** and, or, not](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#14-logical-operators-and-or-not)  
+>[1.5. **Lower()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#15-lower-function)  
+>[1.6. **Count()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#16-count-function)  
+>[1.7. **Day projects:** Treasure Island, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#17-day-projects)  
 
 ### 1.1. Conditional statments: if, elif, else
 
-> #### _Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_
+> #### _Conditional Statement in Python perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false._
 
-All integer literals or variables are objects of the int class.  
+Python has 3 key Conditional statements:
 
-_**Example 1:**_
+- if statement
+- if-else statement
+- if-elif-else ladder  
 
-```python
-# Those are integers
-integer_one = 2
-integer_two = 8974
-integer_three = -894
-```
-
-Leading zeros in non-zero integers are not allowed e.g. 000123 is invalid number, 0000 is 0.  
-
-_**Example 2:**_
-
-```python
-x=012
-SyntaxError:leading zeros in decimal integer literals are not permitted
-```
-
-Python does not allow comma as number delimiter. Use underscore _ as a delimiter instead.  
-
-_**Example 3:**_
-
-```python
-number_1 = 123_456_789
-number_2 = 123456789
-number_1 = number_2
-```
-
-> #### _Int() function returns an integer from a given object or converts a number in a given base to a decimal._
-
-_**Example 1:**_
-
-```python
-# Convert a string "55" into an integer
-num = int("55")
-print(type(num))
-```
-
-_**Example 2:**_
-
-```python
-# Convert an input value string class into an integer class
-num = int(input("Type in a number: "))
-print(type(num))
-```
-
-_**Example 3:**_
-
-```python
-num = input("Type in a number: ")
-num_as_int = int(num)
-print(type(num_as_int))
-```
-
-#### Extract a character by index
-
-You can get a character at the desired position by specifying an index in [ ].  
-Indexes begin with 0 (zero-based indexing).
-
->Zero-based array indexing is a way of numbering the items in an array such that the first item of it has an index of 0,
->whereas a one-based array indexed array has its first item indexed as 1. 
+>####  _if statement_ is used for decision-making operations. It contains a body of code which runs only when the condition given in the if statement is true. 
+>#### These statements guide the program while making decisions based on the conditions encountered by the program.
 
 _**Example:**_
 
 ```python
-username = "MaxToronto"
-print(username[0])  # Pull out "M"
-print(username[1])   # Pull out "a"
-print(username[3])   # Pull out "T"
+number = 7
+# check if number is greater than 0
+if number > 0:
+    print("Number is positive.")
 ```
 
-### 1.2. Comparison operators
+>####  _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that >#### should justify the statement or logic.
+
+_**Example:**_
+
+```python
+number = 7
+if number > 0:
+    print("Positive number")
+else:
+    print("Negative number")
+```
+
+>####  _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif >#### and else statements to perform a series of checks.
+
+_**Example:**_
+
+```python
+number = 7
+number = 0
+if number > 0:
+    print("Positive number")
+elif number == 0:
+    print('Zero')
+else:
+    print('Negative number')
+```
+
+>####  _Nested if statments:_ You can have if statements inside if statements
+
+```python
+number = 80
+if number > 10:
+    print("Number is above 10.")
+    if number > 20:
+        print("And also above 20.")
+    else:
+        print("But not above 20.")
+```
+
+### 1.2. Comparison operators: >, <, >=, <=, ==, !=
 
 > #### _The float type in Python represents the floating point number._
 
@@ -112,21 +96,7 @@ num = float("8.5")
 print(type(num))
 ```
 
-_**Example 2:**_
 
-```python
-# Convert an input value string class into a float class
-num = float(input("Type in a number: "))
-print(type(num))
-```
-
-_**Example 3:**_
-
-```python
-num = input("Type in a number: ")
-num_as_float = float(num)
-print(type(num_as_float))
-```
 
 ### 1.3. Modulo %  
 
@@ -335,16 +305,15 @@ print("Call us now and get 10% discount!")
 
 ### Resources:
 
-<https://www.tutorialsteacher.com/python/python-number-type>  
-<https://www.w3schools.com/python/python_numbers.asp> 
-<https://www.geeksforgeeks.org/python-int-function/>  
-<https://www.geeksforgeeks.org/python-float-type-and-its-methods/>
-<https://www.techtarget.com/whatis/definition/Boolean#:~:text=In%20computing%2C%20the%20term%20Boolean,are%20used.>  
-<https://www.w3schools.com/python/python_booleans.asp>  
-<https://www.geeksforgeeks.org/python-type-function/>  
-<https://note.nkmk.me/en/python-str-extract/>  
-<https://medium.com/analytics-vidhya/array-indexing-0-based-or-1-based-dd89d631d11c>  
-<https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp>  
+<https://www.naukri.com/learning/articles/conditional-statement-in-python/>  
+<https://www.guru99.com/if-loop-python-conditional-structures.html>  
+<https://www.programiz.com/python-programming/if-elif-else>  
+<https://www.idtech.com/blog/what-does-elif-mean-in-python#>
+
+
+
+
+ 
 
 ---
 
