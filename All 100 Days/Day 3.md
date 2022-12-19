@@ -24,6 +24,8 @@ Python has 3 key Conditional statements:
 
 These statements guide the program while making decisions based on the conditions encountered by the program.
 
+![]<https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/if%20statement%20flowchart.drawio>
+
 _**Example:**_
 
 ```python
