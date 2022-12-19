@@ -10,7 +10,7 @@
 >[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#16-round-function)  
 >[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#17-day-projects)  
 
-### 1.1. Integer and int() function
+### 1.1. Conditional statments: if, elif, else
 
 > #### _Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_
 
@@ -87,7 +87,7 @@ print(username[1])   # Pull out "a"
 print(username[3])   # Pull out "T"
 ```
 
-### 1.2. Float and float() function
+### 1.2. Comparison operators
 
 > #### _The float type in Python represents the floating point number._
 
@@ -128,7 +128,7 @@ num_as_float = float(num)
 print(type(num_as_float))
 ```
 
-### 1.3. Boolean  
+### 1.3. Modulo %  
 
 > #### _Boolean means a result that can only have one of two possible values: true or false._
 
@@ -146,7 +146,7 @@ print(7 == 9)  #Returns False
 print(1 < 9)  #Returns True
 ```
 
-### 1.4. Type() function
+### 1.4. Logical operators: and, or, not
 
 > #### _Type() function returns the type of the objects/data elements stored in any data type ._
   
@@ -199,7 +199,7 @@ result = int(char_1) + int(char_2)
 print(result)
 ```
 
-### 1.5. Arithmetic operators
+### 1.5. Lower() function
 
 > #### _Arithmetic operators are used with numeric values to perform common mathematical operations:_
 
@@ -250,7 +250,7 @@ Addition = Subtraction, and have the same level of priority
 
 >#### _In this situation, execution goes from the left side of the example to the right._
 
-### 1.6. Round() function
+### 1.6. Count() function
 
 > #### _The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._
 
@@ -286,7 +286,7 @@ print(x)  # Returns 75.99
 
 ### 1.7. Day projects
 
-#### Bootcamp day project: Tip calculator
+#### Bootcamp day project: Treasure Island
 
 ```python
 # If the bill was $150.00, split between 5 people, with 12% tip. 
