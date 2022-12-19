@@ -27,7 +27,7 @@ These statements guide the program while making decisions based on the condition
 ![if statement flowchart](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/if%20statement%20flowchart.png)
 
 _**Example:**_
-
+ 
 ```python
 number = 5
 # Check if number is greater than 0
