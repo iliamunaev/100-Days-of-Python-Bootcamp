@@ -86,9 +86,7 @@ if number > 10:
 - **Greater than or equal to** (>=)
 - **Less than or equal to** (<=)
 - **Equal** (==)
-- **Not equal	** (!=)
-
-Float is used to represent real numbers and is written with a decimal point dividing the integer and fractional parts. 
+- **Not equal** (!=)
 
 _**Example 1:**_
 
@@ -127,34 +125,26 @@ print(num_1 == num_2)  # False
 print(num_1 != num_2)  # True
 ```
 
-> #### _Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point._
-
-_**Example 1:**_
-
-```python
-# Convert a string "8.5" into an integer
-num = float("8.5")
-print(type(num))
-```
-
-
-
 ### 1.3. Modulo %  
 
-> #### _Boolean means a result that can only have one of two possible values: true or false._
+> #### Modulo % returns the remainder of dividing the left hand operand by right hand operand._
 
-Boolean logic takes two statements or expressions and applies a logical operator to generate a Boolean value that can be either true or false. 
-
-![Boolean_logic_exaple](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/Boolean_logic.png)
-
-When you compare two values, the expression is evaluated and Python returns the Boolean answer.
-
-_**Example 1:**_
+It's used to get the remainder of a division problem.
 
 ```python
-print(10 > 9)  #Returns True
-print(7 == 9)  #Returns False
-print(1 < 9)  #Returns True
+num_1 = 10
+num_2 = 5
+num_3 = 3
+print(num_1 % num_2)  # Returns '0'
+print(num_1 % num_3)  # Returns '1'
+```
+
+```python
+num_1 = 10
+num_1 = 100
+num_2 = 30
+print(num_1 % num_2)  # Returns '10'.
+#  100 % 30 = (30 +30 +30) + and 10, where '10' is the remainder.
 ```
 
 ### 1.4. Logical operators: and, or, not
@@ -349,7 +339,9 @@ print("Call us now and get 10% discount!")
 <https://www.naukri.com/learning/articles/conditional-statement-in-python/>  
 <https://www.guru99.com/if-loop-python-conditional-structures.html>  
 <https://www.programiz.com/python-programming/if-elif-else>  
-<https://www.idtech.com/blog/what-does-elif-mean-in-python#>
+<https://www.idtech.com/blog/what-does-elif-mean-in-python#>  
+<https://www.w3schools.com/python/gloss_python_comparison_operators.asp>  
+
 
 
 
