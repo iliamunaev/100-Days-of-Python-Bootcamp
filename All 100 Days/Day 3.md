@@ -54,6 +54,8 @@ else:
 
 >#### _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif and else statements to perform a series of checks.
 
+![if elif else statement](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/if_elif_else_statement.png)
+
 _**Example:**_
 
 ```python
