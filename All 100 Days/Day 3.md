@@ -1,8 +1,8 @@
-# Day 3: integer and int() function, float and float() function, boolean, type(), arithmetic operators, round()
+# Day 3: Conditional statements: if, elif, else; Comparison operators: >, <, >=, <=, ==, !=; Modulo %; Logical operators: and, or, not; Lower(); Count(); Day projects: Treasure Island, S????
 
 > ## Day topics:
 >
->[1.1. **Conditional statments:** if, elif, else](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%203.md#11-conditional-statments-if-elif-else)    
+>[1.1. **Conditional statements:** if, elif, else](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%203.md#11-conditional-statments-if-elif-else)    
 >[1.2. **Comparison operators:** >, <, >=, <=, ==, !=](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#12-comparison-operators)  
 >[1.3. **Modulo %** ](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#13-modulo-)  
 >[1.4. **Logical operators:** and, or, not](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#14-logical-operators-and-or-not)  
@@ -93,7 +93,7 @@ _**Example 1:**_
 ```python
 num_1 = 5
 num_2 = 2
-print(num_1 > num_2)  # True
+print(num_1 > num_2)  # Returns True
 ```
 
 _**Example 2:**_
@@ -101,8 +101,8 @@ _**Example 2:**_
 ```python
 num_1 = 1
 num_2 = 5
-print(num_1 < num_2)  # True
-print(num_1 > num_2)  # False
+print(num_1 < num_2)  # Returns True
+print(num_1 > num_2)  # Returns False
 ```
 
 _**Example 3:**_
@@ -111,9 +111,9 @@ _**Example 3:**_
 num_1 = 1
 num_2 = 5
 num_3 = 7
-print(num_1 <= num_2)  # True
-print(num_3 >= num_2)  # True
-print(num_1 >= num_1)  # True
+print(num_1 <= num_2)  # Returns True
+print(num_3 >= num_2)  # Returns True
+print(num_1 >= num_1)  # Returns True
 ```
 
 _**Example 4:**_
@@ -121,8 +121,8 @@ _**Example 4:**_
 ```python
 num_1 = 1
 num_2 = 5
-print(num_1 == num_2)  # False
-print(num_1 != num_2)  # True
+print(num_1 == num_2)  # Returns False
+print(num_1 != num_2)  # Returns True
 ```
 
 ### 1.3. Modulo %  
@@ -144,25 +144,47 @@ num_1 = 10
 num_1 = 100
 num_2 = 30
 print(num_1 % num_2)  # Returns '10'.
-#  100 % 30 = (30 +30 +30) + and 10, where '10' is the remainder.
+# 100 % 30 = (30 +30 +30) + and 10, where '10' is the remainder.
 ```
 
-### 1.4. Logical operators: and, or, not
+### 1.4. Logical operators: and, or, Nnot
 
-> #### _Type() function returns the type of the objects/data elements stored in any data type ._
+> #### _Logical operators are used on conditional statements (either True or False). They perform Logical AND, Logical OR and Logical NOT operations._
   
-TIn Python, we do not explicitly specify the data type of the variable for storing data elements.  
-Hence, if we want to find out what type of data is stored in a variable we use Python’s built-in type() function.
+- **and**: True if both the operands are true
+- **or**:  True if either of the operands is true	
+- **not**: True if operand is false
 
 _**Example 1:**_
 
 ```python
-username = "Sara"
-age = 18
-distance_marathon = 42.092
-print(type(username))  # Returns <class 'str'>
-print(type(age))  # Returns <class 'int'>
-print(type(distance_marathon))  # Returns <class 'float'>
+a = 10
+b = 10
+if a > 0 and b > 0:
+    print("True")  # Returns True
+else:
+    print("False")
+```
+
+_**Example 2:**_
+
+```python
+a = 10
+b = 10
+if a > 0 or b > 0:
+    print("True")  # Returns True
+else:
+    print("False")
+```
+
+_**Example 3:**_
+
+```python
+a = 10
+if not a > 0:
+    print("True")
+else:
+    print("False")  # Returns False
 ```
 
 #### Exercise
@@ -341,6 +363,8 @@ print("Call us now and get 10% discount!")
 <https://www.programiz.com/python-programming/if-elif-else>  
 <https://www.idtech.com/blog/what-does-elif-mean-in-python#>  
 <https://www.w3schools.com/python/gloss_python_comparison_operators.asp>  
+<https://www.geeksforgeeks.org/python-logical-operators-with-examples-improvement-needed/>  
+
 
 
 
