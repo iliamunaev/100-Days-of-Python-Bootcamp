@@ -250,7 +250,7 @@ Addition = Subtraction, and have the same level of priority
 
 ### 1.6. Round() function
 
-> #### _The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._
+> #### _Round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._
 
 The default number of decimals is 0, meaning that the function will return the nearest integer.
 
