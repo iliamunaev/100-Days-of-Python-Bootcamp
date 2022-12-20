@@ -6,7 +6,7 @@
 
 ## Day 1: Band name generator, Username generator
 
-### Bootcamp day project: Band name generator
+### #1 Bootcamp day project: Band name generator
 
 Write a greeting for your program. Ask the user for the city that they grew up in.  
 Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
@@ -20,7 +20,7 @@ band_name = city + " " + pet_name
 print("Your band name could be: " + band_name)
 ```
 
-### My day project: Username generator
+### #2 My day project: Username generator
 
 The username generator creates a username based on a first and a last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
@@ -42,7 +42,7 @@ print("Your Username is: " + first_name + "_" + last_name + "_" + length_first_n
 
 ## Day 2: Tip calculator, Service price calculator
 
-### Bootcamp day project: Tip calculator
+### #3 Bootcamp day project: Tip calculator
 
 Write a program which calculates total price and split the bill between all participants.  
 If the bill was $150.00, split between 5 people, with 12% tip.  
@@ -60,7 +60,7 @@ sum_for_each = round((pay_sum / number_of_people),2)
 print(f"Each person should pay: ${sum_for_each}")
 ```
 
-### My day project: Service price calculator
+### #4 My day project: Service price calculator
 
 The calculator calculates the cost of the service based on the input data.  
 It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
@@ -90,7 +90,7 @@ print("Call us now and get 10% discount!")
 
 ## Day 2: Tip calculator, Service price calculator
 
-### Bootcamp day project 1: Pizza order program
+### #5 Bootcamp day project 1: Pizza order program
 
 Build an automatic pizza order program. Based on a user's order, work out their final bill.
 Small Pizza: $15  
@@ -173,7 +173,7 @@ if extra_cheese == "Y":
 print(f"Your final bill is: ${bill}.")
 ```
 
-### Bootcamp day project 2: Love calculator
+### #6 Bootcamp day project 2: Love calculator
 Write a program that tests the compatibility between two people. To work out the love score between two people:  
 Take both people's names and check for the number of times the letters in the word TRUE occurs.  
 Then check for the number of times the letters in the word LOVE occurs.   
@@ -217,7 +217,7 @@ else:
     print(f"Your score is {total}.")
 ```
 
-### Bootcamp day project 3: Treasure Island
+### #7 Bootcamp day project 3: Treasure Island
 Make a game.Use conditionals such as if, else, and elif statements to lay out the logic and the story's path in your program.  
 Text Snippets:  
 "You're at a crossroad. Where do you want to go? Type 'left' or 'right'."  
