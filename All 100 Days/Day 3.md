@@ -26,7 +26,7 @@ These statements guide the program while making decisions based on the condition
 
 ![if statement flowchart](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/if%20statement.png)
 
-_**Example 1:**_
+_**Example:**_
  
 ```python
 number = 5
@@ -40,7 +40,7 @@ print(name)
 
 >#### _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that should justify the statement or logic.
 
-_**Example 2:**_
+_**Example:**_
 
 ```python
 number = 7
@@ -65,7 +65,7 @@ else:
     print('Negative number')
 ```
 
->#### _Nested if statments:_ You can have if statements inside if statements
+>#### _Nested if statments:_ You can have if statements inside if statements.
 
 
 _**Example:**_
@@ -495,4 +495,4 @@ else:
 [> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
 [> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
 
-[TO THE DAY 1 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%201.md)
+[TO THE DAY 2 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%202.md)
