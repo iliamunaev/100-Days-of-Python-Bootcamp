@@ -12,7 +12,7 @@
 
 ### 1.1. Integer and int() function
 
-> #### _Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision_
+> #### _Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision._
 
 All integer literals or variables are objects of the int class.  
 
@@ -148,7 +148,7 @@ print(1 < 9)  #Returns True
 
 ### 1.4. Type() function
 
-> #### _Type() function returns the type of the objects/data elements stored in any data type ._
+> #### _Type() function returns the type of the objects/data elements stored in any data type._
   
 TIn Python, we do not explicitly specify the data type of the variable for storing data elements.  
 Hence, if we want to find out what type of data is stored in a variable we use Python’s built-in type() function.
