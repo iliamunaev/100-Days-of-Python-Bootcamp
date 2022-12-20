@@ -6,13 +6,13 @@
 >1.2. **Comparison operators:** >, <, >=, <=, ==, !=  
 >1.3. **Modulo %**    
 >1.4. **Logical operators:** and, or, not.  
->1.5. **Lower()** method.  
->1.6. **Count()** method.   
+>1.5. **Lower()** function.  
+>1.6. **Count()** function.   
 >1.7. **Day projects:** Pizza order program, Love calculator, Treasure Island.  
 
 ### 1.1. Conditional statments: if, elif, else
 
-> #### _Conditional Statement in Python perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false._
+> #### _Conditional statements perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false._
 
 Python has 3 key Conditional statements:
 
@@ -184,7 +184,7 @@ else:
     print("This is an odd number.")
 ```
 
-### 1.4. Logical operators: and, or, Nnot
+### 1.4. Logical operators: and, or, not
 
 > #### _Logical operators are used on conditional statements (either True or False). They perform Logical AND, Logical OR and Logical NOT operations._
   
@@ -271,9 +271,9 @@ else:
     print("Not leap year.")
 ```
 
-### 1.5. Lower() method
+### 1.5. Lower() function
 
-> #### _Lower() method takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase._
+> #### _Lower() function takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase._
 
 If there are no uppercase characters in the given string, it returns the original string.
 
@@ -291,9 +291,9 @@ message = "PYTHON"
 print(message.lower())  # Output: python 
 ```
 
-### 1.6. Count() method
+### 1.6. Count() function
 
-> #### _The count() method returns the number of occurrences of a substring in the given string._
+> #### _Count() function returns the number of occurrences of a substring in the given string._
 
 
 _**Example 1:**_
