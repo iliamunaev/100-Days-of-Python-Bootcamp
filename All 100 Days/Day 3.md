@@ -71,6 +71,7 @@ else:
 
 >#### _Nested if statments:_ You can have if statements inside if statements.
 
+![nested if statement](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/nesned_if_statement.png)
 
 _**Example:**_
 
