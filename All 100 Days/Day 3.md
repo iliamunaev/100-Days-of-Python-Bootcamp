@@ -81,21 +81,50 @@ if number > 10:
 
 > #### _Comparison operators are used to compare two values._
 
-- **Addition** (+) 
-- **Subtraction** (-) 
-- **Multiplication** (*)
-- **Division** (/)
-- **Exponentiation** (**)
+- **Greater than** (>) 
+- **Less than** (<) 
+- **Greater than or equal to** (>=)
+- **Less than or equal to** (<=)
+- **Equal** (==)
+- **Not equal	** (!=)
 
 Float is used to represent real numbers and is written with a decimal point dividing the integer and fractional parts. 
 
-_**Example:**_
+_**Example 1:**_
 
 ```python
-# Those are float numbers
-float_num_1 = 2.5
-float_num_2 = 0.777
-float_num_3 = -3.87
+num_1 = 5
+num_2 = 2
+print(num_1 > num_2)  # True
+```
+
+_**Example 2:**_
+
+```python
+num_1 = 1
+num_2 = 5
+print(num_1 < num_2)  # True
+print(num_1 > num_2)  # False
+```
+
+_**Example 3:**_
+
+```python
+num_1 = 1
+num_2 = 5
+num_3 = 7
+print(num_1 <= num_2)  # True
+print(num_3 >= num_2)  # True
+print(num_1 >= num_1)  # True
+```
+
+_**Example 4:**_
+
+```python
+num_1 = 1
+num_2 = 5
+print(num_1 == num_2)  # False
+print(num_1 != num_2)  # True
 ```
 
 > #### _Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point._
