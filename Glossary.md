@@ -4,9 +4,6 @@
 
 > ## A
 
-### Addition operator +
-The Addition operator + combines two or more strings.  
-
 ### and
 'and' is logical operator: True if both the operands are true
 
