@@ -2,13 +2,13 @@
 
 > ## Day topics:
 >
->[1.1. **Conditional statements:** if, elif, else](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%203.md#11-conditional-statments-if-elif-else)    
->[1.2. **Comparison operators:** >, <, >=, <=, ==, !=](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#12-comparison-operators)  
->[1.3. **Modulo %** ](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#13-modulo-)  
->[1.4. **Logical operators:** and, or, not](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#14-logical-operators-and-or-not)  
->[1.5. **Lower()** method](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#15-lower-function)  
->[1.6. **Count()** method](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#16-count-function)  
->[1.7. **Day projects:** Pizza order program, Love calculator, Treasure Island.](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#17-day-projects)  
+>1.1. **Conditional statements:** if, elif, else.  
+>1.2. **Comparison operators:** >, <, >=, <=, ==, !=  
+>1.3. **Modulo %**    
+>1.4. **Logical operators:** and, or, not.  
+>1.5. **Lower()** method.  
+>1.6. **Count()** method.   
+>1.7. **Day projects:** Pizza order program, Love calculator, Treasure Island.  
 
 ### 1.1. Conditional statments: if, elif, else
 
@@ -475,7 +475,7 @@ if choice_1 == "left":
         print("You was attacked by shark. Game over!")
 else:
     print("Fall into a hole. Game over!")
-````
+```
 
 ---
 
