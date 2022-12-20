@@ -164,9 +164,7 @@ print(type(age))  # Returns <class 'int'>
 print(type(distance_marathon))  # Returns <class 'float'>
 ```
 
-#### Exercise
-
-Find a sum of two numbers, which the user type in the request
+_**Exercise:** find a sum of two numbers, which the user type in the request._
 
 _**Solution 1:**_
 
