@@ -182,13 +182,11 @@ a, b = b, a
 
 #### Bootcamp day project: Band name generator
 
-```python
-# 1. Create a greeting for your program.
-# 2. Ask the user for the city that they grew up in.
-# 3. Ask the user for the name of a pet.
-# 4. Combine the name of their city and pet and show them their band name.
-# 5. Make sure the input cursor shows on a new line:
+Write a greeting for your program. Ask the user for the city that they grew up in.  
+Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
+Make sure the input cursor shows on a new line:
 
+```python
 print("Welcom to the Band Name Generator.")
 city = input("What's name of the city your grew up in? ")
 pet_name = input("What's your pet's name? ")
@@ -198,15 +196,15 @@ print("Your band name could be: " + band_name)
 
 #### My day project: Username generator
 
-```python
-# The username generator creates a username based on a first and a last name of the user.
-# The uniqueness of the name is given also by the number added to the end of the name
-# which is a combination of two integers.
-# The numbers are equivalent to the length of the first and the last name of the user.
+The username generator creates a username based on a first and a last name of the user.  
+The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
+The numbers are equivalent to the length of the first and the last name of the user.  
 
+```python
 print('Welcome to the "Username Generator".')
 first_name = input("Type in your first name: ")
 last_name = input("Type in your last name: ")
+
 # Count number of characters of the first and the last names
 # and convert them from integer to string.
 length_first_name = str(len(first_name))
