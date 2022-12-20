@@ -22,7 +22,7 @@ Strings are useful for storing human-readable data, like sentences, or lists of 
 
 ### 1.2. Print() function
 
-> #### _The print() function prints the specified message to the screen, or other standard output device._
+> #### _Print() function prints the specified message to the screen, or other standard output device._
 
 The message can be a string, or any other object, the object will be converted into a string before written to the screen.
 
@@ -68,7 +68,7 @@ print("Hello" + " " + "World")
 
 ### 1.5. Input() function
 
-> #### _The input() function reads a line from input, converts it to a string, and returns that._
+> #### _Input() function reads a line from input, converts it to a string, and returns that._
 
 The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
@@ -87,7 +87,7 @@ print(input('Enter your name: '))
 
 ### 1.6. Len() function
 
-> #### _The len() function return the length (the number of items) of an object._
+> #### _Len() function return the length (the number of items) of an object._
 
 The function is a way of asking the user to provide some type of input.
 When the input function is called it stops the program and waits for the user’s input. 
