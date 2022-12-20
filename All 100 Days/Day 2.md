@@ -2,13 +2,13 @@
 
 > ## Day topics:
 >
->[1.1. **Integer** definition and **int()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#11-integer-and-int-function)    
->[1.2. **Float** definition and **float()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#12-float-and-float-function)  
->[1.3. **Boolean** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#13-boolean)  
->[1.4. **Type()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#14-type-function)  
->[1.5. **Arithmetic** operators](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#15-arithmetic-operators)  
->[1.6. **Round()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#16-round-function)  
->[1.7. **Day projects:** Tip Calculator, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%202.md#17-day-projects)  
+>1.1. **Integer** definition and **int()** function.  
+>1.2. **Float** definition and **float()** function.  
+>1.3. **Boolean** definition.   
+>1.4. **Type()** function.  
+>1.5. **Arithmetic** operators.   
+>1.6. **Round()** function.  
+>1.7. **Day projects:** Tip Calculator, Service price calculator.  
 
 ### 1.1. Integer and int() function
 
