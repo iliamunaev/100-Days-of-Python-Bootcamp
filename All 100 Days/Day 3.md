@@ -6,8 +6,8 @@
 >[1.2. **Comparison operators:** >, <, >=, <=, ==, !=](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#12-comparison-operators)  
 >[1.3. **Modulo %** ](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#13-modulo-)  
 >[1.4. **Logical operators:** and, or, not](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#14-logical-operators-and-or-not)  
->[1.5. **Lower()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#15-lower-function)  
->[1.6. **Count()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#16-count-function)  
+>[1.5. **Lower()** method](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#15-lower-function)  
+>[1.6. **Count()** method](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#16-count-function)  
 >[1.7. **Day projects:** Treasure Island, Service price calculator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%203.md#17-day-projects)  
 
 ### 1.1. Conditional statments: if, elif, else
@@ -38,7 +38,7 @@ name = "John"
 print(name)
 ```
 
->####  _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that should justify the statement or logic.
+>#### _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that should justify the statement or logic.
 
 _**Example:**_
 
@@ -50,7 +50,7 @@ else:
     print("Negative number")
 ```
 
->####  _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif and else statements to perform a series of checks.
+>#### _if-elif-else statement_ is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif and else statements to perform a series of checks.
 
 _**Example:**_
 
@@ -65,7 +65,7 @@ else:
     print('Negative number')
 ```
 
->####  _Nested if statments:_ You can have if statements inside if statements
+>#### _Nested if statments:_ You can have if statements inside if statements
 
 ```python
 number = 80
@@ -125,6 +125,19 @@ print(num_1 == num_2)  # Returns False
 print(num_1 != num_2)  # Returns True
 ```
 
+_**Exercise:** write a program which counts days, weeks and months remaining to your 100 years anniversary._
+
+```python
+age = input("What is your current age? ")
+age_as_int = int(age)
+years_remaining = 100 - age_as_int
+days = years_remaining * 365
+weeks = years_remaining * 52
+months = years_remaining * 12
+result = f"You have {days} days, {weeks} weeks, and {months} months left."
+print(result)
+```
+
 ### 1.3. Modulo %  
 
 > #### Modulo % returns the remainder of dividing the left hand operand by right hand operand._
@@ -145,6 +158,19 @@ num_1 = 100
 num_2 = 30
 print(num_1 % num_2)  # Returns '10'.
 # 100 % 30 = (30 +30 +30) + and 10, where '10' is the remainder.
+```
+
+_**Exercise:**  
+Write a program that works out whether if a given number is an odd or even number. Given number should be an integer._
+
+_**Solution:**_
+
+```python
+number = int(input("Which number do you want to check?\n"))
+if number % 2 == 0:
+    print("This is an even number.")
+else:
+    print("This is an odd number.")
 ```
 
 ### 1.4. Logical operators: and, or, Nnot
@@ -187,124 +213,93 @@ else:
     print("False")  # Returns False
 ```
 
-#### Exercise
+_**Exercise:**  
+Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.  
+The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m).  
+It should tell them the interpretation of their BMI based on the BMI value.  
+Under 18.5 they are underweight. Over 18.5 but below 25 they have a normal weight.  
+Over 25 but below 30 they are slightly overweight. Over 30 but below 35 they are obese.  
+Above 35 they are clinically obese._
 
-Find a sum of two numbers, which the user type in the request
-
-_**Solution 1:**_
-
-```python
-two_digit_number = input("Type a two digit number: ")
-char_1 = two_digit_number[0]  # Pull out character number 1
-char_2 = two_digit_number[1]  # Pull out character number 2
-char_1_int = int(char_1)  # Convert character 1 from string to integer class
-char_2_int = int(char_2)  # Convert character 2 from string to integer class
-result = char_1_int + char_2_int
-print(result)
-```
-
-_**Solution 2:**_
+_**Solution:**_
 
 ```python
-two_digit_number = input("Type a two digit number: ")
-char_1 = int(two_digit_number[0])   # Pull out and convert character number 1 from string to integer class
-char_2 = int(two_digit_number[1])  # Pull out and convert character number 2 from string to integer class
-result = char_1 + char_2
-print(result)
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+bmi = weight / height ** 2
+bmi_rounded = round(bmi)
+if bmi < 18.5:
+    print(f"Your BMI is {bmi_rounded}, you are underweight.")
+elif bmi < 25:
+    print(f"Your BMI is {bmi_rounded}, you have a normal weight.")
+elif bmi < 30:
+    print(f"Your BMI is {bmi_rounded}, you are slightly overweight.")
+elif bmi < 35:
+    print(f"Your BMI is {bmi_rounded}, you are obese.")
+else:
+    print(f"Your BMI is {bmi_rounded}, you are clinically obese.")
 ```
 
-_**Solution 3:**_
+_**Exercise:**  
+Write a program that works out, whether a given year is a leap year. A normal year has 365 days, and leap years have 366, with an extra day in February.
+This is how you find out: leap year is every year that is evenly divisible by 4, except every year that is evenly divisible by 100, unless the year is also evenly divisible by 400._
+
+_**Solution:**_
 
 ```python
-two_digit_number = input("Type a two digit number: ")
-char_1, char_2 = two_digit_number[0], two_digit_number[1]
-result = int(char_1) + int(char_2)
-print(result)
+year = int(input("Which year do you want to check? "))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year.")     
+        else:
+            print("Not leap year.")
+    else:
+        print("Leap year.")        
+else:
+    print("Not leap year.")
 ```
 
-### 1.5. Lower() function
+### 1.5. Lower() method
 
-> #### _Arithmetic operators are used with numeric values to perform common mathematical operations:_
+> #### _Lower() method takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase._
 
-- **Addition** (+) 
-- **Subtraction** (-) 
-- **Multiplication** (*)
-- **Division** (/)
-- **Exponentiation** (**)
-
-_**Examples:**_
-
-```python
-print(2 + 2)
-```
-
-
-```python
-print(4 - 2)
-```
-
-```python
-print(2 * 2)
-```
-
-```python
-print(6 / 2)
-```
-
-```python
-print(3 ** 2)
-```
-
-#### PEMDAS is the level of execution priority
-
-The range from the highest to the lowest priority:
-
-**P** is parentheses.  
-**E** is exponentiation.  
-**M** is multiplication.  
-**D** is division.  
-**A** is addition.  
-**S** is subtraction. 
-
-#### BUT
-
-Multiplication = Division, and have the same level of priority  
-Addition = Subtraction, and have the same level of priority
-
->#### _In this situation, execution goes from the left side of the example to the right._
-
-### 1.6. Count() function
-
-> #### _The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals._
-
-The default number of decimals is 0, meaning that the function will return the nearest integer.
+If there are no uppercase characters in the given string, it returns the original string.
 
 _**Example 1:**_
 
 ```python
-x = round(5.2)
-print(x)  # Returns 5
+message = "PYTHON"
+message = message.lower()
+print(message)  # Output: python 
+```
+_**Example 2:**_
+
+```python
+message = "PYTHON"
+print(message.lower())  # Output: python 
+```
+
+### 1.6. Count() method
+
+> #### _The count() method returns the number of occurrences of a substring in the given string._
+
+
+_**Example 1:**_
+
+```python
+message = "python is programming language"
+# Find a number of occurrence of 'p'
+number = message.count('p')
+print("Number of occurrence of p:", number)  # Output: Number of occurrence of p: 2
 ```
 
 _**Example 2:**_
 
 ```python
-x = round(5.7)
-print(x)  # Returns 6
-```
-
-We can assign how many number of decimals to use when rounding the number.
-
-_**Example 1:**_
-
-```python
-x = round(5.589, 2)
-print(x)  # Returns 5.59
-```
-
-```python
-x = round(75.98991458, 3)
-print(x)  # Returns 75.99
+message = "python is programming language"
+# Find a number of occurrence of 'p'
+print("Number of occurrence of p:", message.count('p'))  # Output: Number of occurrence of p: 2
 ```
 
 ### 1.7. Day projects
@@ -364,6 +359,10 @@ print("Call us now and get 10% discount!")
 <https://www.idtech.com/blog/what-does-elif-mean-in-python#>  
 <https://www.w3schools.com/python/gloss_python_comparison_operators.asp>  
 <https://www.geeksforgeeks.org/python-logical-operators-with-examples-improvement-needed/>  
+<https://www.programiz.com/python-programming/methods/string/lower>  
+<https://www.programiz.com/python-programming/methods/string/count>  
+
+
 
 
 
