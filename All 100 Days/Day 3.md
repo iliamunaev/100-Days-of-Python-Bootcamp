@@ -304,48 +304,93 @@ print("Number of occurrence of p:", message.count('p'))  # Output: Number of occ
 
 ### 1.7. Day projects
 
-#### Bootcamp day project: Treasure Island
+#### Bootcamp day project: pizza order program
+
+_**Solution1:**_
 
 ```python
-# If the bill was $150.00, split between 5 people, with 12% tip. 
-# Each person should pay (150.00 / 5) * 1.12 = 33.6
-# Format the result to 2 decimal places = 33.60
-# Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.
+# Build an automatic pizza order program.
+# Based on a user's order, work out their final bill.
+# Small Pizza: $15
+# Medium Pizza: $20
+# Large Pizza: $25
+# Pepperoni for Small Pizza: +$2
+# Pepperoni for Medium or Large Pizza: +$3
+# Extra cheese for any size pizza: + $1
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+bill = 0
+if size == "S":
+    bill += 15
+    if add_pepperoni == "Y":
+        bill += 2
+    else:
+        bill
+    if extra_cheese == "Y":
+        bill += 1
+    else:
+        bill
+elif size == "M":
+    bill += 20
+    if add_pepperoni == "Y":
+        bill += 3
+    else:
+        bill
+    if extra_cheese == "Y":
+        bill += 1
+    else:
+        bill
+else:
+    bill += 25
+    if add_pepperoni == "Y":
+        bill += 3
+    else:
+        bill
+    if extra_cheese == "Y":
+        bill += 1
+    else:
+        bill
+print(f"Your final bill is: ${bill}.")
+```
 
-print("Welcom to the tip calculator.")
-bill = float(input("What was the total bill? $"))
-tip_persentage = int(input("What persentage tip would you lake to give? 10, 12 or 15? "))
-number_of_people = int(input("How many people to split the bill? "))
-tip_sum = tip_persentage * bill / 100
-pay_sum = bill + tip_sum / number_of_people
-sum_for_each = round((pay_sum / number_of_people),2)
-print(f"Each person should pay: ${sum_for_each}")
-````
-
-#### My day project: Service price calculator
+_**Solution2:**_
 
 ```python
-# The calculator calculates the cost of the service based on the input data.
-# It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
+# Build an automatic pizza order program.
+# Based on a user's order, work out their final bill.
+# Small Pizza: $15
+# Medium Pizza: $20
+# Large Pizza: $25
+# Pepperoni for Small Pizza: +$2
+# Pepperoni for Medium or Large Pizza: +$3
+# Extra cheese for any size pizza: + $1
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+bill = 0
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese == "Y":
+    bill += 1
+print(f"Your final bill is: ${bill}.")
+```
 
-print("Calculate the price for our service.")
-square = float(input("How many sq.meters in your apartment: "))
-windows = int(input("How many windows in your apartment: "))
-doors = int(input("How many doors in your apartment: "))
-pets = int(input("Do you have pets in the apartment? If no type in '0', if you have type in '1': "))
-price_base = 15
 
-# Calculating a cost based on the input and multiplying on indexes if applicable
-price_on_square = price_base * square
-price_on_windows = price_base * windows * 1.4
-price_on_doors = price_base * doors * 1.2
-price_on_pets = price_base * pets * 20
-price = round((price_on_square + price_on_windows + price_on_doors + price_on_pets), 2)
+#### My day project: ???
 
-# Calculating a cost based on the start date of the service
-price_urgent = round((price * 1.3), 2)
-print(f"Total price for cleaning service is:\nWe start tomorrow or later: ${price}\nWe start today: ${price_urgent}")
-print("Call us now and get 10% discount!")
+```python
 
 ````
 
@@ -362,14 +407,6 @@ print("Call us now and get 10% discount!")
 <https://www.programiz.com/python-programming/methods/string/lower>  
 <https://www.programiz.com/python-programming/methods/string/count>  
 
-
-
-
-
-
-
-
- 
 
 ---
 
