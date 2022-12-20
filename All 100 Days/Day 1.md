@@ -2,14 +2,14 @@
 
 > ## Day topics:
 >
->[1.1. **String** definition](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#11-string)    
->[1.2. **Print()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#12-print-function)  
->[1.3. Escape operator **\n**](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#13-escape-operator-n)  
->[1.4. Concatenate strings using **addition (+) operator**](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#14-concatenate-strings-using-operator-)  
->[1.5. **Input()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#15-input-function)  
->[1.6. **Len()** function](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#16-len-function)  
->[1.7. **Variables:** definition, naming, changing](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#17-variables-definition-naming-changing)  
->[1.8. **Day projects:** Band name generator, Username generator](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/edit/main/All%20100%20Days/Day%201.md#18-day-projects)
+>1.1. **String** definition.  
+>1.2. **Print()** function.  
+>1.3. Escape operator **\n**.  
+>1.4. Concatenate strings using **addition (+) operator**.  
+>1.5. **Input()** function.  
+>1.6. **Len()** function.  
+>1.7. **Variables:** definition, naming, changing.  
+>1.8. **Day projects:** Band name generator, Username generator.  
 
 ### 1.1. String
 
