@@ -40,6 +40,8 @@ print(name)
 
 >#### _if-else statement_ is used when you have to judge one statement on the basis of other. If one condition goes wrong, then there should be another condition that should justify the statement or logic.
 
+![if else statemnent](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/if_else_statement.png)
+
 _**Example:**_
 
 ```python
