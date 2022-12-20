@@ -286,12 +286,12 @@ print(x)  # Returns 75.99
 
 #### Bootcamp day project: Tip calculator
 
-```python
-# If the bill was $150.00, split between 5 people, with 12% tip. 
-# Each person should pay (150.00 / 5) * 1.12 = 33.6
-# Format the result to 2 decimal places = 33.60
-# Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.
+rite a program which calculates total price and split the bill between all participants.  
+If the bill was $150.00, split between 5 people, with 12% tip.  
+Each person should pay (150.00 / 5) * 1.12 = 33.6  
+Format the result to 2 decimal places = 33.60
 
+```python
 print("Welcom to the tip calculator.")
 bill = float(input("What was the total bill? $"))
 tip_persentage = int(input("What persentage tip would you lake to give? 10, 12 or 15? "))
@@ -300,14 +300,14 @@ tip_sum = tip_persentage * bill / 100
 pay_sum = bill + tip_sum / number_of_people
 sum_for_each = round((pay_sum / number_of_people),2)
 print(f"Each person should pay: ${sum_for_each}")
-````
+```
 
 #### My day project: Service price calculator
 
-```python
-# The calculator calculates the cost of the service based on the input data.
-# It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
+The calculator calculates the cost of the service based on the input data.  
+It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
 
+```python
 print("Calculate the price for our service.")
 square = float(input("How many sq.meters in your apartment: "))
 windows = int(input("How many windows in your apartment: "))
@@ -326,8 +326,7 @@ price = round((price_on_square + price_on_windows + price_on_doors + price_on_pe
 price_urgent = round((price * 1.3), 2)
 print(f"Total price for cleaning service is:\nWe start tomorrow or later: ${price}\nWe start today: ${price_urgent}")
 print("Call us now and get 10% discount!")
-
-````
+```
 
 ---
 
