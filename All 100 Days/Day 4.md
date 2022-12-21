@@ -9,7 +9,7 @@
 >1.5. **Append()** method.  
 >1.6. **Extend()** method.   
 >1.7. **Nested list**.   
->1.8. **Day projects:** Pizza order program, Love calculator, Treasure Island.  
+>1.8. **Day project:** Rock, Paper, Scissors.  
 
 ### 1.1. Module, Import.
 
@@ -83,6 +83,38 @@ fruits = ["apple", "banana", "cherry"]
 print(random.choice(fruits))
 ```
 
+_**Coding exercise 1:**  
+You are going to write a program that will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+You are going to write a virtual coin toss program. It will randomly tell the user "Heads" or "Tails"._
+
+_**Solution:**_
+
+```python
+names_string = input("Give me everybody's names, separated by a comma. ")
+import random
+result = random.randint(0, 1)
+if result == 1:
+    print("Heads")
+else:
+    print("Tails")
+```
+
+_**Coding exercise 2:**  
+You are going to write a program that will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+Important: You are not allowed to use the choice() function._
+
+_**Solution:**_
+
+```python
+names_string = input("Give me everybody's names, separated by a comma. ")
+names_list = names_string.split(", ")
+people_count = len(names_list)
+import random
+bill_payer_number = random.randint(0, people_count -1)
+bill_payer_name = names_list[bill_payer_number]
+print(f"{bill_payer_name} is going to buy the meal today!")
+```
+
 ### 1.3. List definition.
 
 > #### _A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements. Each element or value that is inside of a list is called an item._
@@ -146,6 +178,8 @@ print(f'Number of items in the list is: {len(list_1)}')
 
 > #### _The index() function searches a given element from the start of the list and returns the index of the first occurrence._
 
+In Python, each item in a list is associated with a number. The number is known as a list index.
+
 _**Syntax:**_
 
 ```python
@@ -159,8 +193,8 @@ list_1 = ['window', 'door', 'lamp', 'table']
 print(list_1.index('door', 0))  # Returns '1'
 ```
 
-The ordinal number of the first element is '0'.  
-The ordinal number of the second element is '1' and so on.
+The ordinal number (index) of the first element is '0'.  
+The ordinal number (index) of the second element is '1' and so on.
 
 _**Example 1:**_
 
@@ -179,15 +213,15 @@ list_1 = ['window', 'door', 'lamp', 'table']
 print(f'Number of items in the list is: {len(list_1)}')
 # Returns 'Number of items in the list is: 4'
 # BUT!
-print(f'The ordinal number of the first element is: {list_1.index("window",0)}')
-# The ordinal number of the first element 'window' is '0'
-print(f'The ordinal number of the last element is: {list_1.index("table",0)}')
-# The ordinal number of the last element 'table' is '3'
+print(f'The index of the first element is: {list_1.index("window",0)}')
+# The index of the first element 'window' is '0'
+print(f'The index of the last element is: {list_1.index("table",0)}')
+# The index of the last element 'table' is '3'
 # AND! If element does not exist.
 print(list_1.index('door', 2))  # Returns 'ValueError: 'door' is not in list'
 ```
 
-#### Changing items in a list.
+#### Changing elements in a list.
 
 _**Syntax:**_
 
@@ -206,10 +240,121 @@ print(list_1)
 
 ### 1.5. Append() method.  
 
+> #### _The Append() method appends an element to the end of the list._
 
+Length of the list increases by 1
 
+_**Syntax:**_
 
+```python
+list.append(element)
+```
 
+_**Example 1:**_
+
+```python
+list_1 = ['window', 'door', 'lamp', 'table']
+print(list_1)
+# Returns ''window', 'door', 'lamp', 'table']
+# Add element 'cat'.
+list_1.append('cat')
+print(list_1)
+# Returns ''window', 'door', 'lamp', 'table', 'cat']
+```
+
+### 1.6. Extend() method.  
+
+> #### _The Append() method appends a number of elements to the end of the list._
+
+	Length of the list increases by the number of elements in the iterable.
+
+_**Example:**_
+
+```python
+list_1 = ['window', 'door', 'lamp', 'table']
+print(list_1)
+# Returns ''window', 'door', 'lamp', 'table']
+# Add elements 'cat', 'moon', 'sea'.
+list_1.extend(['cat', 'moon', 'sea'])
+print(list_1)
+# Returns ''window', 'door', 'lamp', 'table', 'cat', 'moon', 'sea']
+```
+
+### 1.7. Nested list.
+
+> #### _A nested list in Python allows a list to contain multiple sublists within itself._
+
+Each sublist can have items of different data types. It can be created by placing comma-separated sublists and items together.  
+
+_**Example:**_
+
+```python
+L = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', 'h']
+```
+
+![Nested list](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/nested_list.png)
+
+#### Create a nested list. 
+
+_**Solution 1:**_
+
+```python
+ist_1 = [1, 2, 3, 4]
+list_2 = ['one', 'two', 'three']
+list_3 = []
+list_3.append(list_1)
+list_3.append(list_2)
+print(list_3)  # Returns [[1, 2, 3, 4], ['one', 'two', 'three']]
+```
+
+_**Solution 2:**_
+
+```python
+list_1 = [1, 2, 3, 4]
+list_2 = ['one', 'two', 'three']
+list_3 = [list_1, list_2]
+print(list_3)  # Returns [[1, 2, 3, 4], ['one', 'two', 'three']]
+```
+
+_**Exsemple:**_
+
+```python
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+food = [fruits, vegetables]
+print(food[0][0])  # Returns 'Strawberries'.
+print(food[0][1])  # Returns 'Nectarines'.
+print(food[1][0])  # Returns 'Spinach'.
+print(food[1][1])  # Returns 'Kale'.
+```
+
+**Coding exercise:**  
+You are going to write a program that will mark a spot with an X.  
+In the starting code, you will find a variable called map.  
+This map contains a nested list._
+
+_**Solution:**_
+
+```python
+# Don't change the code below
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+#Write your code below this row
+column = int(position[0])
+row = int(position[1])
+map[row - 1][column - 1] = 'X'
+
+# Don't change the code below
+print(f"{row1}\n{row2}\n{row3}")
+```
+## 1.7. Day project.
+
+#### Bootcamp day project: Rock, Paper, Scissors,
 
 ```python
 # Don't change the code below
@@ -303,7 +448,9 @@ else:
 <https://www.educative.io/answers/what-is-a-python-list>  
 <https://www.geeksforgeeks.org/python-list-index/>  
 <https://developers.google.com/edu/python/lists>  
-
+<https://www.w3schools.com/python/ref_list_append.asp>  
+<https://www.geeksforgeeks.org/difference-between-append-extend-and-insert-in-python/>  
+<https://www.learnbyexample.org/python-nested-list/>  
 
 
 ---
@@ -311,4 +458,4 @@ else:
 [> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
 [> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
 
-[DAY 2 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%202.md)
+[DAY 3 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%203.md)
