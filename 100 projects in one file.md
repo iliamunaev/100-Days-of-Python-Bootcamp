@@ -1,12 +1,13 @@
 # 100 projects in one file
 
->**Day 1:** Band name generator, Username generator.  
->**Day 2:** Tip calculator, Service price calculator.  
->**Day 3:** Pizza order program, Love calculator, Treasure Island.  
+>**Day 1:** "Band name generator", "Username generator".  
+>**Day 2:** "Tip calculator", "Service price calculator".  
+>**Day 3:** "Pizza order program", "Love calculator", "Treasure Island".  
+>**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".
 
-## Day 1: Band name generator, Username generator
+## Day 1: "Band name generator", "Username generator"
 
-### #1 Bootcamp day project: Band name generator
+### #1 Bootcamp day project: "Band name generator"
 
 Write a greeting for your program. Ask the user for the city that they grew up in.  
 Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
@@ -20,7 +21,7 @@ band_name = city + " " + pet_name
 print("Your band name could be: " + band_name)
 ```
 
-### #2 My day project: Username generator
+### #2 My day project: "Username generator"
 
 The username generator creates a username based on a first and a last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
@@ -40,9 +41,9 @@ print("Your Username is: " + first_name + "_" + last_name + "_" + length_first_n
 
 ---
 
-## Day 2: Tip calculator, Service price calculator
+## Day 2: "Tip calculator", "Service price calculator"
 
-### #3 Bootcamp day project: Tip calculator
+### #3 Bootcamp day project: "Tip calculator"
 
 Write a program which calculates total price and split the bill between all participants.  
 If the bill was $150.00, split between 5 people, with 12% tip.  
@@ -60,7 +61,7 @@ sum_for_each = round((pay_sum / number_of_people),2)
 print(f"Each person should pay: ${sum_for_each}")
 ```
 
-### #4 My day project: Service price calculator
+### #4 My day project: "Service price calculator"
 
 The calculator calculates the cost of the service based on the input data.  
 It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
@@ -88,9 +89,9 @@ print("Call us now and get 10% discount!")
 
 ---
 
-## Day 2: Tip calculator, Service price calculator
+## Day 3: "Pizza order program", "Love calculator", "Treasure Island"
 
-### #5 Bootcamp day project 1: Pizza order program
+### #5 Bootcamp day project 1: "Pizza order program"
 
 Build an automatic pizza order program. Based on a user's order, work out their final bill.
 Small Pizza: $15  
@@ -173,7 +174,8 @@ if extra_cheese == "Y":
 print(f"Your final bill is: ${bill}.")
 ```
 
-### #6 Bootcamp day project 2: Love calculator
+### #6 Bootcamp day project 2: "Love calculator"
+
 Write a program that tests the compatibility between two people. To work out the love score between two people:  
 Take both people's names and check for the number of times the letters in the word TRUE occurs.  
 Then check for the number of times the letters in the word LOVE occurs.   
@@ -217,7 +219,8 @@ else:
     print(f"Your score is {total}.")
 ```
 
-### #7 Bootcamp day project 3: Treasure Island
+### #7 Bootcamp day project 3: "Treasure Island"
+
 Make a game.Use conditionals such as if, else, and elif statements to lay out the logic and the story's path in your program.  
 Text Snippets:  
 "You're at a crossroad. Where do you want to go? Type 'left' or 'right'."  
@@ -250,6 +253,124 @@ if choice_1 == "left":
         print("You was attacked by shark. Game over!")
 else:
     print("Fall into a hole. Game over!")
+```
+
+---
+
+## Day 4: "Hide the treasure", "Rock, Paper, Scissors"
+
+### #8 Bootcamp day project 1: "Hide the treasure"
+
+You are going to write a program that will mark a spot with an X.  
+In the starting code, you will find a variable called map.  
+This map contains a nested list.
+
+_**Solution:**_
+
+```python
+# Don't change the code below
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+#Write your code below this row
+column = int(position[0])
+row = int(position[1])
+map[row - 1][column - 1] = 'X'
+
+# Don't change the code below
+print(f"{row1}\n{row2}\n{row3}")
+```
+
+### #9 Bootcamp day project 1: "Rock, Paper, Scissors"
+
+Make a rock, paper, scissors game.  
+You'll find the ASCII art for the hand signals already saved to a corresponding variable: rock, paper, and scissors.  
+Start the game by asking the player: "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."  
+You can find the "official" rules of the game on the [World Rock Paper Scissors Association website](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/).
+
+```python
+# Don't change the code below
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+#Write your code below this row
+column = int(position[0])
+row = int(position[1])
+map[row - 1][column - 1] = 'X'
+
+# Don't change the code below
+print(f"{row1}\n{row2}\n{row3}")
+```
+
+```python
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+# Write your code below this line
+import random
+
+gamer_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+list_of_options = [rock, paper, scissors]
+comp_choice = random.randint(0, 2)
+if gamer_choice == 0 and comp_choice == 1:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You lose!")
+elif gamer_choice == 0 and comp_choice == 2:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You win!")
+elif gamer_choice == 1 and comp_choice == 0:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You win!")
+elif gamer_choice == 1 and comp_choice == 2:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You lose!")
+elif gamer_choice == 2 and comp_choice == 0:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You lose!")
+elif gamer_choice == 2 and comp_choice == 1:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("You win!")
+else:
+    print(list_of_options[gamer_choice])
+    print(list_of_options[comp_choice])
+    print("Try again!")
 ```
 
 ---
