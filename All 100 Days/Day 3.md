@@ -1,5 +1,4 @@
-# Day 3: Conditional statements: if, elif, else; Comparison operators: >, <, >=, <=, ==, !=; Modulo %; Logical operators: and, or, not; Lower(); Count(); Day projects: Pizza order program, Love calculator; Treasure Island.
-
+# Day 3: Conditional statements: if, elif, else, comparison operators (>, <, >=, <=, ==, !=), Modulo %, logical operators (and, or, not=, lower(); count().
 > ## Day topics:
 >
 >1.1. **Conditional statements:** if, elif, else.  
@@ -8,7 +7,7 @@
 >1.4. **Logical operators:** and, or, not.  
 >1.5. **Lower()** function.  
 >1.6. **Count()** function.   
->1.7. **Day projects:** Pizza order program, Love calculator, Treasure Island.  
+>1.7. **Day projects:** 'Pizza order program', 'Love calculator' and 'Treasure Island.'  
 
 ### 1.1. Conditional statments: if, elif, else
 
@@ -278,7 +277,7 @@ else:
 
 ### 1.5. Lower() function
 
-> #### _Lower() function takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase._
+> #### _The Lower() function takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase._
 
 If there are no uppercase characters in the given string, it returns the original string.
 
@@ -298,7 +297,7 @@ print(message.lower())  # Output: python
 
 ### 1.6. Count() function
 
-> #### _Count() function returns the number of occurrences of a substring in the given string._
+> #### _The Count() function returns the number of occurrences of a substring in the given string._
 
 
 _**Example 1:**_
