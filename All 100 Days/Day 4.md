@@ -1,4 +1,4 @@
-# Day 4: Module, Import; Random modul, randint(), random() and choice(); list; list elements, len() and index(); append(); extend(); Nested list; Day projects: ????.
+# Day 4: Module, import, random modul, randint(), random(), choice(), list, list elements, len(), index(), append(), extend(), nested list.
 
 > ## Day topics:
 >
@@ -9,7 +9,7 @@
 >1.5. **Append()** method.  
 >1.6. **Extend()** method.   
 >1.7. **Nested list**.   
->1.8. **Day project:** Rock, Paper, Scissors.  
+>1.8. **Day project:** "Hide the treasure" and "Rock, Paper, Scissors".  
 
 ### 1.1. Module, Import.
 
@@ -328,10 +328,13 @@ print(food[1][0])  # Returns 'Spinach'.
 print(food[1][1])  # Returns 'Kale'.
 ```
 
-**Coding exercise:**  
+## 1.7. Day project.
+
+#### Bootcamp day project 1: "Hide the treasure".
+
 You are going to write a program that will mark a spot with an X.  
 In the starting code, you will find a variable called map.  
-This map contains a nested list._
+This map contains a nested list.
 
 _**Solution:**_
 
@@ -352,27 +355,13 @@ map[row - 1][column - 1] = 'X'
 # Don't change the code below
 print(f"{row1}\n{row2}\n{row3}")
 ```
-## 1.7. Day project.
 
-#### Bootcamp day project: Rock, Paper, Scissors,
+#### Bootcamp day project 2: "Rock, Paper, Scissors".
 
-```python
-# Don't change the code below
-row1 = ["⬜️","️⬜️","️⬜️"]
-row2 = ["⬜️","⬜️","️⬜️"]
-row3 = ["⬜️️","⬜️️","⬜️️"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-position = input("Where do you want to put the treasure? ")
-
-#Write your code below this row
-column = int(position[0])
-row = int(position[1])
-map[row - 1][column - 1] = 'X'
-
-# Don't change the code below
-print(f"{row1}\n{row2}\n{row3}")
-```
+Make a rock, paper, scissors game.  
+You'll find the ASCII art for the hand signals already saved to a corresponding variable: rock, paper, and scissors.  
+Start the game by asking the player: "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."  
+You can find the "official" rules of the game on the [World Rock Paper Scissors Association website](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/).
 
 ```python
 rock = '''
