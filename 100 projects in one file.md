@@ -13,6 +13,8 @@ Write a greeting for your program. Ask the user for the city that they grew up i
 Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
 Make sure the input cursor shows on a new line:
 
+_**Solution:**_
+
 ```python
 print("Welcom to the Band Name Generator.")
 city = input("What's name of the city your grew up in? ")
@@ -26,6 +28,8 @@ print("Your band name could be: " + band_name)
 The username generator creates a username based on a first and a last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
 The numbers are equivalent to the length of the first and the last name of the user.  
+
+_**Solution:**_
 
 ```python
 print('Welcome to the "Username Generator".')
@@ -50,6 +54,8 @@ If the bill was $150.00, split between 5 people, with 12% tip.
 Each person should pay (150.00 / 5) * 1.12 = 33.6  
 Format the result to 2 decimal places = 33.60
 
+_**Solution:**_
+
 ```python
 print("Welcom to the tip calculator.")
 bill = float(input("What was the total bill? $"))
@@ -65,6 +71,8 @@ print(f"Each person should pay: ${sum_for_each}")
 
 The calculator calculates the cost of the service based on the input data.  
 It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
+
+_**Solution:**_
 
 ```python
 print("Calculate the price for our service.")
@@ -233,6 +241,8 @@ You've come to a lake. There is an island in the middle of the lake. Type "wait"
 "You get attacked by an angry trout. Game Over."  
 "You fell into a hole. Game Over."  
 
+_**Solution:**_
+
 ```python
 print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
 choice_1 = input("Choose your path. Turn to the left or to the right. Type 'left' or 'right'\n")
@@ -291,6 +301,8 @@ Make a rock, paper, scissors game.
 You'll find the ASCII art for the hand signals already saved to a corresponding variable: rock, paper, and scissors.  
 Start the game by asking the player: "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."  
 You can find the "official" rules of the game on the [World Rock Paper Scissors Association website](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/).
+
+_**Solution:**_
 
 ```python
 # Don't change the code below
