@@ -2,7 +2,7 @@
 
 > ## Day topics:
 >
->.1.1. **Module**, **Import**.  
+>1.1. **Module**, **Import**.  
 >1.2. **Random module**, **randint()**, **random()** and **choice()**.  
 >1.3. **List** definition.  
 >1.4. List elements **extraction**, **len()** and **index()**.    
