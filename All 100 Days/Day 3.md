@@ -7,7 +7,7 @@
 >1.4. **Logical operators:** and, or, not.  
 >1.5. **Lower()** method.  
 >1.6. **Count()** method.   
->1.7. **Day projects:** 'Pizza order program', 'Love calculator' and 'Treasure Island.'  
+>1.7. **Day projects:** "Pizza order program", "Love calculator" and "Treasure Island". 
 
 ### 1.1. Conditional statments: if, elif, else
 
@@ -319,7 +319,7 @@ print("Number of occurrence of p:", message.count('p'))  # Output: Number of occ
 
 ### 1.7. Day projects
 
-#### Bootcamp day project 1: Pizza order program
+#### Bootcamp day project 1: "Pizza order program".
 
 Build an automatic pizza order program. Based on a user's order, work out their final bill.
 Small Pizza: $15  
@@ -402,7 +402,8 @@ if extra_cheese == "Y":
 print(f"Your final bill is: ${bill}.")
 ```
 
-#### Bootcamp day project 2: Love calculator
+#### Bootcamp day project 2: "Love calculator".
+
 Write a program that tests the compatibility between two people. To work out the love score between two people:  
 Take both people's names and check for the number of times the letters in the word TRUE occurs.  
 Then check for the number of times the letters in the word LOVE occurs.   
