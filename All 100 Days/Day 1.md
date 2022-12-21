@@ -9,7 +9,7 @@
 >1.5. **Input()** function.  
 >1.6. **Len()** function.  
 >1.7. **Variables:** definition, naming, changing.  
->1.8. **Day projects:** 'Band name generator' and 'Username generator'.  
+>1.8. **Day projects:** "Band name generator" and "Username generator".  
 
 ### 1.1. String
 
@@ -180,7 +180,7 @@ a, b = b, a
 
 ### 1.8. Day projects
 
-#### Bootcamp day project: 'Band name generator'.
+#### Bootcamp day project: "Band name generator".
 
 Write a greeting for your program. Ask the user for the city that they grew up in.  
 Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
@@ -194,7 +194,7 @@ band_name = city + " " + pet_name
 print("Your band name could be: " + band_name)
 ````
 
-#### My day project: 'Username generator'.
+#### My day project: "Username generator".
 
 The username generator creates a username based on a first and a last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
