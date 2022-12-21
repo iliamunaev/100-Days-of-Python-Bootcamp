@@ -1,4 +1,4 @@
-# Day 3: Conditional statements: if, elif, else, comparison operators (>, <, >=, <=, ==, !=), Modulo %, logical operators (and, or, not=, lower(); count().
+# Day 3: Conditional statements: if, elif, else, comparison operators (>, <, >=, <=, ==, !=), Modulo %, logical operators (and, or, not), lower(); count().
 > ## Day topics:
 >
 >1.1. **Conditional statements:** if, elif, else.  
