@@ -1,4 +1,4 @@
-# Day 2: integer and int() function, float and float() function, boolean, type(), arithmetic operators, round()
+# Day 2: integer and int() function, float and float() function, boolean, type(), arithmetic operators, round().
 
 > ## Day topics:
 >
@@ -8,7 +8,7 @@
 >1.4. **Type()** function.  
 >1.5. **Arithmetic** operators.   
 >1.6. **Round()** function.  
->1.7. **Day projects:** 'Tip Calculator' and 'Service price calculator'.  
+>1.7. **Day projects:** "Tip Calculator" and "Service price calculator".  
 
 ### 1.1. Integer and int() function
 
@@ -284,7 +284,7 @@ print(x)  # Returns 75.99
 
 ### 1.7. Day projects
 
-#### Bootcamp day project: 'Tip calculator'.
+#### Bootcamp day project: "Tip calculator".
 
 rite a program which calculates total price and split the bill between all participants.  
 If the bill was $150.00, split between 5 people, with 12% tip.  
@@ -302,7 +302,7 @@ sum_for_each = round((pay_sum / number_of_people),2)
 print(f"Each person should pay: ${sum_for_each}")
 ```
 
-#### My day project: 'Service price calculator'.
+#### My day project: "Service price calculator".
 
 The calculator calculates the cost of the service based on the input data.  
 It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
