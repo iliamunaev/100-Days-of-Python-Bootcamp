@@ -5,7 +5,7 @@
 >1.1. **String** definition.  
 >1.2. **Print()** function.  
 >1.3. Escape operator **\n**.  
->1.4. Concatenate strings using **addition (+) operator**.  
+>1.4. Concatenate strings using the **addition (+) operator**.  
 >1.5. **Input()** function.  
 >1.6. **Len()** function.  
 >1.7. **Variables:** definition, naming, changing.  
@@ -24,7 +24,7 @@ Strings are useful for storing human-readable data, like sentences, or lists of 
 
 > #### _Print() function prints the specified message to the screen, or other standard output device._
 
-The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+The message can be a string or any other object;  the object will be converted into a string before being written to the screen.
 
 ```python
 print("Hello World")
@@ -40,7 +40,7 @@ print("I live in Helsinki")
 print("Hello World.\nThis is my first code.\nI live in Helsinki.")
 ```
 
-### 1.4. Concatenate strings using operator +
+### 1.4. Concatenate strings using the operator +
 
 > #### _The (+) operator (or addition operator) lets you combine two or more strings._
   
@@ -48,19 +48,19 @@ The addition operator (+) is referred to as the Python string concatenation oper
 The operator should appear between the two strings you want to merge.  
 Don't forget to add space between words in the sentence.
 
-_**Solution 1:** adding space at the end of the first word inside the brackets_
+_**Solution 1:** Add a space at the end of the first word inside the brackets._
 
 ```python
 print("Hello " + "World")
 ```
 
-_**Solution 2:** adding space at the beginning of the second word inside the brackets_
+_**Solution 2:** Add a space at the beginning of the second word inside the brackets._
 
 ```python
 print("Hello" + " World")
 ```
 
-_**Solution 3:** adding space between the words using space inside a new pair of brackets_
+_**Solution 3:** Add a space between the words using space inside a new pair of brackets._
 
 ```python
 print("Hello" + " " + "World")
@@ -71,7 +71,7 @@ print("Hello" + " " + "World")
 > #### _Input() function reads a line from input, converts it to a string, and returns that._
 
 The function is a way of asking the user to provide some type of input.
-When the input function is called it stops the program and waits for the user’s input. 
+When the input function is called, it stops the program and waits for the user’s input. 
 When the user presses enter, the program resumes and returns what the user typed. 
 
 _**Example 1:**_
@@ -90,7 +90,7 @@ print(input('Enter your name: '))
 > #### _Len() function return the length (the number of items) of an object._
 
 The function is a way of asking the user to provide some type of input.
-When the input function is called it stops the program and waits for the user’s input. 
+When the input function is called, it stops the program and waits for the user’s input. 
 When the user presses enter, the program resumes and returns what the user typed. 
 
 _**Example 1:**_
@@ -164,7 +164,7 @@ user name = "Alex"
 
 How to interchange the value of two variables.
 
-_**Example 1:** using the 3rd varible:_ 
+_**Example 1:** using the 3rd variable._ 
 
 ```python
 c = a
@@ -172,7 +172,7 @@ a = b
 b = c
 ```
 
-_**Example 2:** without 3rd varible:_
+_**Example 2:** without 3rd variable._
 
 ```python
 a, b = b, a
@@ -183,7 +183,7 @@ a, b = b, a
 #### Bootcamp day project: "Band name generator".
 
 Write a greeting for your program. Ask the user for the city that they grew up in.  
-Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
+Ask the user for the name of a pet. Combine the name of their city and pet and show them their band name.  
 Make sure the input cursor shows on a new line:
 
 ```python
@@ -196,7 +196,7 @@ print("Your band name could be: " + band_name)
 
 #### My day project: "Username generator".
 
-The username generator creates a username based on a first and a last name of the user.  
+The username generator creates a username based on the first and last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
 The numbers are equivalent to the length of the first and the last name of the user.  
 
