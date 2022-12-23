@@ -50,6 +50,9 @@ Escape character is a backslash \ followed by the character you want to insert.
 ### Float()
 Float() function converts a number stored in a string or integer into a floating point number, or a number with a decimal point.  
 
+### _For_ loop 
+The for loops are used when you have a block of code which you want to repeat a fixed number of times.
+
 > ## I
 
 ### if statement
@@ -82,6 +85,9 @@ Logical operators are:
 - or
 - not
 
+### Loop
+The loop is a sequence of instruction s that is continually repeated until a certain condition is reached.
+
 ### Lower() 
 Lower() function takes no arguments and returns the lowercased strings from the given string by converting each uppercase character to lowercase.
 
@@ -109,6 +115,9 @@ not is logical operator: True if operand is false
 Print() function prints the specified message to the screen, or other standard output device.
 
 > ## R
+
+### Range()
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
 ### Round()
 Round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals.  
