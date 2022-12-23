@@ -25,7 +25,7 @@ integer_two = 8974
 integer_three = -894
 ```
 
-Leading zeros in non-zero integers are not allowed e.g. 000123 is invalid number, 0000 is 0.  
+Leading zeros in non-zero integers are not allowed e.g. 000123 is an invalid number, 0000 is 0.  
 
 _**Example 2:**_
 
@@ -34,7 +34,7 @@ x=012
 SyntaxError:leading zeros in decimal integer literals are not permitted
 ```
 
-Python does not allow comma as number delimiter. Use underscore _ as a delimiter instead.  
+Python does not allow comma as a number delimiter. Use underscore _ as a delimiter instead.  
 
 _**Example 3:**_
 
@@ -136,7 +136,7 @@ Boolean logic takes two statements or expressions and applies a logical operator
 
 ![Boolean_logic_exaple](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/Boolean_logic.png)
 
-When you compare two values, the expression is evaluated and Python returns the Boolean answer.
+When you compare two values, the expression is evaluated, and Python returns the Boolean answer.
 
 _**Example 1:**_
 
@@ -150,8 +150,8 @@ print(1 < 9)  #Returns True
 
 > #### _Type() function returns the type of the objects/data elements stored in any data type._
   
-TIn Python, we do not explicitly specify the data type of the variable for storing data elements.  
-Hence, if we want to find out what type of data is stored in a variable we use Python’s built-in type() function.
+In Python, we do not explicitly specify the data type of the variable for storing data elements.  
+Hence, if we want to find out what type of data is stored in a variable, we use Python’s built-in type() function.
 
 _**Example 1:**_
 
@@ -164,7 +164,7 @@ print(type(age))  # Returns <class 'int'>
 print(type(distance_marathon))  # Returns <class 'float'>
 ```
 
-_**Exercise:** find a sum of two numbers, which the user type in the request._
+_**Exercise:** find a sum of two numbers, which the user types in the request._
 
 _**Solution 1:**_
 
@@ -268,7 +268,7 @@ x = round(5.7)
 print(x)  # Returns 6
 ```
 
-We can assign how many number of decimals to use when rounding the number.
+We can assign how many decimals to use when rounding the number.
 
 _**Example 1:**_
 
@@ -286,7 +286,7 @@ print(x)  # Returns 75.99
 
 #### Bootcamp day project: "Tip calculator".
 
-rite a program which calculates total price and split the bill between all participants.  
+Write a program which calculates  the total price and splits the bill between all participants.  
 If the bill was $150.00, split between 5 people, with 12% tip.  
 Each person should pay (150.00 / 5) * 1.12 = 33.6  
 Format the result to 2 decimal places = 33.60
@@ -305,7 +305,7 @@ print(f"Each person should pay: ${sum_for_each}")
 #### My day project: "Service price calculator".
 
 The calculator calculates the cost of the service based on the input data.  
-It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
+It is assumed that the apartment always has at least one window and a door. No zero values are used.
 
 ```python
 print("Calculate the price for our service.")
