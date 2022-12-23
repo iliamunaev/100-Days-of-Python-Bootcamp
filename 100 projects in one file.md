@@ -4,6 +4,7 @@
 >**Day 2:** "Tip calculator", "Service price calculator".  
 >**Day 3:** "Pizza order program", "Love calculator", "Treasure Island".  
 >**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".
+>**Day 5:** "Password Generator".
 
 ## Day 1: "Band name generator", "Username generator"
 
@@ -365,6 +366,50 @@ else:
     print(list_of_options[gamer_choice])
     print(list_of_options[comp_choice])
     print("Try again!")
+```
+
+---
+
+## Day 4: "Password Generator"
+
+### #10 Bootcamp day project: "Password Generator"
+
+The objective is to take the inputs from the user to these questions and then generate a random password.  
+Use your knowledge about Python lists and loops to complete the challenge.  
+
+**Easy Version** (Step 1): Generate the password in sequence.  
+If the user wants 4 letters, 2 symbols and 3 numbers then the password might look like this: fgdx$(924  
+You can see that all the letters are together. All the symbols are together and all the numbers follow each other as well.
+
+**Hard Version** (Step 2): In the advanced version of this project the final password does not follow a pattern.  
+So the example above might look like this: x$d24g(f9  
+And every time you generate a password, the positions of the symbols, numbers, and letters are different.
+
+_**Solution:**_
+
+```python
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+           'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+           'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+print("Welcome to the PyPassword Generator!")
+nr_letters = int(input(f"How many letters would you like in your password?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+password_list = []
+for n in range(nr_letters):
+    password_list.append(random.choice(letters))
+for s in range(nr_symbols):
+    password_list.append(random.choice(symbols))
+for c in range(nr_numbers):
+    password_list.append(random.choice(numbers))
+random.shuffle(password_list)
+password = ""
+for p in password_list:
+    password += p
+print(password)
 ```
 
 ---
