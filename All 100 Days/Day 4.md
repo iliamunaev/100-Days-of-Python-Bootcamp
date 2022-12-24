@@ -20,9 +20,10 @@ They are executed only the first time the module name is encountered in an impor
 
 > #### _The process by which Python code in one module is made available to Python code in another module._
 
-When an import statement is executed, the standard builtin __import__() function is called. 
+When an import statement is executed, the standard built-in __import__() function is called. 
 
-_**Example 1:** When the import is used, it searches for the module initially in the local scope by calling __import__() function. The value returned by the function is then reflected in the output of the initial code._
+_**Example 1:**  
+When the import is used, it searches for the module initially in the local scope by calling the  import() function. The value returned by the function is then reflected in the output of the initial code._
 
 ```python
 import math
@@ -30,8 +31,9 @@ pie = math.pi
 print("The value of pi is : ", pie)
 ```
 
-_**Example 2:** In the above code module, math is imported, and its variables can be accessed by considering it to be a class and pi as its object. 
-The value of pi is returned by __import__(). pi as a whole can be imported into our initial code, rather than importing the whole module._
+_**Example 2:**  
+In the above code module, math is imported, and its variables can be accessed by considering it to be a class and pi as its object. 
+The value of pi is returned by __import__(). pi as a whole can be imported into our initial code rather than importing the whole module._
 
 ```python
 from math import pi
@@ -46,7 +48,7 @@ print(pi)
 
 > #### _The Random module is a Python built-in module that implements pseudo-random number generators for various distributions._
 
-The random module has a set of methods, some of them are:
+The random module has a set of methods, some of which are:
 
 - randind()
 - random()
@@ -193,8 +195,8 @@ list_1 = ['window', 'door', 'lamp', 'table']
 print(list_1.index('door', 0))  # Returns '1'
 ```
 
-The ordinal number (index) of the first element is '0'.  
-The ordinal number (index) of the second element is '1' and so on.
+TThe first element's ordinal number (index) is '0'.  
+The second element's ordinal number (index) is '1', and so on.
 
 _**Example 1:**_
 
@@ -242,7 +244,7 @@ print(list_1)
 
 > #### _The Append() method appends an element to the end of the list._
 
-Length of the list increases by 1
+The length of the list increases by 1.
 
 _**Syntax:**_
 
@@ -250,7 +252,7 @@ _**Syntax:**_
 list.append(element)
 ```
 
-_**Example 1:**_
+_**Example:**_
 
 ```python
 list_1 = ['window', 'door', 'lamp', 'table']
@@ -266,7 +268,7 @@ print(list_1)
 
 > #### _The Append() method appends a number of elements to the end of the list._
 
-	Length of the list increases by the number of elements in the iterable.
+Length of the list increases by the number of elements in the iterable.
 
 _**Example:**_
 
