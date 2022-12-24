@@ -9,7 +9,7 @@
 >1.6. **Count()** method.   
 >1.7. **Day projects:** "Pizza order program", "Love calculator" and "Treasure Island". 
 
-### 1.1. Conditional statments: if, elif, else
+### 1.1. Conditional statements: if, elif, else
 
 > #### _Conditional statements perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false._
 
@@ -133,7 +133,7 @@ print(num_1 != num_2)  # Returns True
 ```
 
 _**Coding exercise:**  
-Write a program which counts days, weeks and months remaining to your 100 years anniversary._
+Write a program which counts the days, weeks and months remaining to your 100 years anniversary._
 
 _**Solution:**_
 
@@ -151,7 +151,7 @@ print(result)
 
 ### 1.3. Modulo %  
 
-> #### Modulo % returns the remainder of dividing the left hand operand by right hand operand._
+> #### Modulo % returns the remainder of dividing the left hand operand by right hand operand.
 
 It's used to get the remainder of a division problem.
 
@@ -176,7 +176,7 @@ print(num_1 % num_2)  # Returns '10'.
 ```
 
 _**Coding exercise:**  
-Write a program that works out whether if a given number is an odd or even number. Given number should be an integer._
+Write a program that determines whether a given number is odd or even. The given number should be an integer._
 
 _**Solution:**_
 
@@ -194,7 +194,7 @@ else:
   
 - **and**: True if both the operands are true
 - **or**:  True if either of the operands is true	
-- **not**: True if operand is false
+- **not**: True if the operand is false
 
 _**Example 1:**_
 
@@ -255,7 +255,7 @@ else:
     print(f"Your BMI is {bmi_rounded}, you are clinically obese.")
 ```
 
-_**Coding xercise:**  
+_**Coding exercise:**  
 Write a program that works out, whether a given year is a leap year. A normal year has 365 days, and leap years have 366, with an extra day in February.
 This is how you find out: leap year is every year that is evenly divisible by 4, except every year that is evenly divisible by 100, unless the year is also evenly divisible by 400._
 
@@ -373,14 +373,6 @@ print(f"Your final bill is: ${bill}.")
 _**Solution2:**_
 
 ```python
-# Build an automatic pizza order program.
-# Based on a user's order, work out their final bill.
-# Small Pizza: $15
-# Medium Pizza: $20
-# Large Pizza: $25
-# Pepperoni for Small Pizza: +$2
-# Pepperoni for Medium or Large Pizza: +$3
-# Extra cheese for any size pizza: + $1
 print("Welcome to Python Pizza Deliveries!")
 size = input("What size pizza do you want? S, M, or L ")
 add_pepperoni = input("Do you want pepperoni? Y or N ")
@@ -407,8 +399,8 @@ print(f"Your final bill is: ${bill}.")
 Write a program that tests the compatibility between two people. To work out the love score between two people:  
 Take both people's names and check for the number of times the letters in the word TRUE occurs.  
 Then check for the number of times the letters in the word LOVE occurs.   
-Then combine these numbers to make a 2 digit number.  
-For Love Scores less than 10 or greater than 90, the message should be: "Your score is **x**, you go together like coke and mentos."  
+Then combine these numbers to make a 2-digit number.  
+For Love Scores, less than 10 or greater than 90, the message should be: "Your score is **x**, you go together like coke and mentos."  
 For Love Scores between 40 and 50, the message should be: "Your score is **y**, you are alright together."  
 
 _**Solution:**_
@@ -449,16 +441,6 @@ else:
 
 #### Bootcamp day project 3: Treasure Island
 Make a game.Use conditionals such as if, else, and elif statements to lay out the logic and the story's path in your program.  
-Text Snippets:  
-"You're at a crossroad. Where do you want to go? Type 'left' or 'right'."  
-You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.'  
-"You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?"  
-"It's a room full of fire. Game Over."  
-"You found the treasure! You Win!"  
-"You enter a room of beasts. Game Over."  
-"You chose a door that doesn't exist. Game Over."  
-"You get attacked by an angry trout. Game Over."  
-"You fell into a hole. Game Over."  
 
 ```python
 print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
