@@ -22,6 +22,9 @@ Arithmetic operators are:
 ### Boolean
 Boolean means a result that can only have one of two possible values: true or false.  
 
+### Built-in function   
+A built-in function is a function that is already available in a programming language, application, or another tool that can be accessed by end users.
+
 > ## C
 
 ### Comparison operators
@@ -53,7 +56,13 @@ Float() function converts a number stored in a string or integer into a floating
 ### _For_ loop 
 The for loops are used when you have a block of code which you want to repeat a fixed number of times.
 
+### Function
+A functions is a "self contained" module of code that accomplish a specific task.
+
 > ## I
+
+### Indentation
+Indentation refers to the spaces at the beginning of a code line.
 
 ### if statement
 if statementis used for decision-making operations. It contains a body of code which runs only when the condition given in the if statement is true
@@ -64,13 +73,16 @@ if-else statement is used when you have to judge one statement on the basis of o
 ### if-elif-else statement
 if-elif-else statement is used when the first if statement isn't true, but you want to check for another condition. Meaning, if statements pair up with elif and else statements to perform a series of checks.
 
-### Input()
+### Infinite loop  
+An infinite loop (or endless loop) is a sequence of instructions that, as written, will continue endlessly, unless an external intervention occurs ("pull the plug").
+
+### Input()  
 Input() function reads a line from input, converts it to a string, and returns that.
 
-### Int()
+### Int()  
 Int() function returns an integer from a given object or converts a number in a given base to a decimal.
 
-### Integers
+### Integers  
 Integers are zero, positive or negative whole numbers without a fractional part and having unlimited precisionintegers are zero, positive or negative whole numbers without a fractional part and having unlimited precision.  
 
 > ## L
@@ -136,3 +148,10 @@ Type() function returns the type of the objects/data elements stored in any data
 
 ### Variable
 Variable is a name that is used to refer to memory location.
+
+
+> ## W
+
+### While loop
+The while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
+
