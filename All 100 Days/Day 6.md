@@ -61,7 +61,7 @@ add_num(5, 2)  # Output: 7
 
 > #### _Indentation refers to the spaces at the beginning of a code line._
 
-Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.  
+WWhereas in other programming languages, the indentation in code is for readability only, the indentation in Python is significant.  
 Python uses indentation to indicate a block of code.
 
 _**Example 1:**_
@@ -71,7 +71,7 @@ if 7 > 3:
     print("The number is still greater then '3'.")
 ```
 
-_**Example 2: syntaxis error**_
+_**Example 2: syntax error**_
 
 ```python
 if 7 > 3:
