@@ -61,7 +61,7 @@ add_num(5, 2)  # Output: 7
 
 > #### _Indentation refers to the spaces at the beginning of a code line._
 
-WWhereas in other programming languages, the indentation in code is for readability only, the indentation in Python is significant.  
+Whereas in other programming languages, the indentation in code is for readability only, the indentation in Python is significant.  
 Python uses indentation to indicate a block of code.
 
 _**Example 1:**_
