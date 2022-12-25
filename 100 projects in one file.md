@@ -3,12 +3,13 @@
 >**Day 1:** "Band name generator", "Username generator".  
 >**Day 2:** "Tip calculator", "Service price calculator".  
 >**Day 3:** "Pizza order program", "Love calculator", "Treasure Island".  
->**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".
->**Day 5:** "Password Generator".
+>**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".  
+>**Day 5:** "Password Generator".  
+>**Day 6:** "Maze".
 
 ## Day 1: "Band name generator", "Username generator"
 
-### #1 Bootcamp day project: "Band name generator"
+### #1 Bootcamp day project: "Band name generator".
 
 Write a greeting for your program. Ask the user for the city that they grew up in.  
 Ask the user for the name of a pet.Combine the name of their city and pet and show them their band name.  
@@ -24,7 +25,7 @@ band_name = city + " " + pet_name
 print("Your band name could be: " + band_name)
 ```
 
-### #2 My day project: "Username generator"
+### #2 My day project: "Username generator".
 
 The username generator creates a username based on a first and a last name of the user.  
 The uniqueness of the name is given also by the number added to the end of the name, which is a combination of two integers.  
@@ -48,7 +49,7 @@ print("Your Username is: " + first_name + "_" + last_name + "_" + length_first_n
 
 ## Day 2: "Tip calculator", "Service price calculator"
 
-### #3 Bootcamp day project: "Tip calculator"
+### #3 Bootcamp day project: "Tip calculator".
 
 Write a program which calculates total price and split the bill between all participants.  
 If the bill was $150.00, split between 5 people, with 12% tip.  
@@ -68,7 +69,7 @@ sum_for_each = round((pay_sum / number_of_people),2)
 print(f"Each person should pay: ${sum_for_each}")
 ```
 
-### #4 My day project: "Service price calculator"
+### #4 My day project: "Service price calculator".
 
 The calculator calculates the cost of the service based on the input data.  
 It is assumed that the apartment always has at least 1 window and a door. No zero values are used.
@@ -100,7 +101,7 @@ print("Call us now and get 10% discount!")
 
 ## Day 3: "Pizza order program", "Love calculator", "Treasure Island"
 
-### #5 Bootcamp day project 1: "Pizza order program"
+### #5 Bootcamp day project 1: "Pizza order program".
 
 Build an automatic pizza order program. Based on a user's order, work out their final bill.
 Small Pizza: $15  
@@ -183,7 +184,7 @@ if extra_cheese == "Y":
 print(f"Your final bill is: ${bill}.")
 ```
 
-### #6 Bootcamp day project 2: "Love calculator"
+### #6 Bootcamp day project 2: "Love calculator".
 
 Write a program that tests the compatibility between two people. To work out the love score between two people:  
 Take both people's names and check for the number of times the letters in the word TRUE occurs.  
@@ -228,7 +229,7 @@ else:
     print(f"Your score is {total}.")
 ```
 
-### #7 Bootcamp day project 3: "Treasure Island"
+### #7 Bootcamp day project 3: "Treasure Island".
 
 Make a game.Use conditionals such as if, else, and elif statements to lay out the logic and the story's path in your program.  
 Text Snippets:  
@@ -270,7 +271,7 @@ else:
 
 ## Day 4: "Hide the treasure", "Rock, Paper, Scissors"
 
-### #8 Bootcamp day project 1: "Hide the treasure"
+### #8 Bootcamp day project 1: "Hide the treasure".
 
 You are going to write a program that will mark a spot with an X.  
 In the starting code, you will find a variable called map.  
@@ -296,7 +297,7 @@ map[row - 1][column - 1] = 'X'
 print(f"{row1}\n{row2}\n{row3}")
 ```
 
-### #9 Bootcamp day project 1: "Rock, Paper, Scissors"
+### #9 Bootcamp day project 1: "Rock, Paper, Scissors".
 
 Make a rock, paper, scissors game.  
 You'll find the ASCII art for the hand signals already saved to a corresponding variable: rock, paper, and scissors.  
@@ -370,9 +371,9 @@ else:
 
 ---
 
-## Day 4: "Password Generator"
+## Day 5: "Password Generator"
 
-### #10 Bootcamp day project: "Password Generator"
+### #10 Bootcamp day project: "Password Generator".
 
 The objective is to take the inputs from the user to these questions and then generate a random password.  
 Use your knowledge about Python lists and loops to complete the challenge.  
@@ -410,6 +411,45 @@ password = ""
 for p in password_list:
     password += p
 print(password)
+```
+
+
+## Day 6: "Maze"
+
+### #11 Bootcamp day project: "Maze".
+
+Write a program using an if/elif/else statement so Reeborg can find the exit.  
+The secret is to have Reeborg follow along the right edge of the maze, turning right if it can,  
+going straight ahead if it can’t turn right, or turning left as a last resort.
+
+## [FIND THE GAME HERE](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json)
+
+_**Solution:**_
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def jump():
+    turn_right()
+    move()
+    turn_right()
+    
+while front_is_clear():
+    move()
+turn_left()
+
+while not at_goal():
+    if not front_is_clear() and right_is_clear():
+        turn_right()
+    elif front_is_clear() and right_is_clear():
+        turn_right()
+    elif not front_is_clear() and not right_is_clear():
+        turn_left()
+        while not front_is_clear():
+            turn_left()
+    move()
 ```
 
 ---
