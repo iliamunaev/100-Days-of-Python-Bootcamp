@@ -5,7 +5,7 @@
 >**Day 3:** "Pizza order program", "Love calculator", "Treasure Island".  
 >**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".  
 >**Day 5:** "Password Generator".  
->**Day 6:** "Maze".
+>**Day 6:** "Maze".  
 >**Day 7:** "Hangman".
 
 ## Day 1: "Band name generator", "Username generator"
