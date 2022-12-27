@@ -289,7 +289,7 @@ if letter in blanked_list:
 ```python
 # Import all you need.
 from hangman_words import word_list
-from hangman_art import logo, stages
+from hangman_art import stages
 import random
 
 # Assign all variables.
