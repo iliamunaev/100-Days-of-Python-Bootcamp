@@ -304,11 +304,9 @@ random_word = random.choice(word_list)
 for n in range(len(random_word)):
     blanked_list += "_"
 
-# Show the user the blank list of the word.
-print(blanked_list)
-
 # Create the main loop and ask the user to guess a letter.
 while not game_over:
+    print(blanked_list)
     letter = input("Please type in a letter: ").lower()
 
 # Inform the user if they already chose the letter before.
@@ -318,16 +316,14 @@ while not game_over:
 # Conditions when the user chooses the wrong letter.
     if letter not in random_word:
         print(stages[stage_index])
-        print(f"'{letter}' is not in the word.")
-        print(blanked_list)
+        print(f"'{letter}' is not in the word.")        
         stage_index -= 1
 
 # Conditions when the user chooses the proper letter.
 # Replace blanked places with letters.
     for n in range(len(random_word)):
         if letter == random_word[n]:
-            blanked_list[n] = letter
-            print(blanked_list)
+            blanked_list[n] = letter            
 
 # Game over conditions.
     if "_" not in blanked_list:
