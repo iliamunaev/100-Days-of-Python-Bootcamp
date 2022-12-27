@@ -6,6 +6,7 @@
 >**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".  
 >**Day 5:** "Password Generator".  
 >**Day 6:** "Maze".
+>**Day 7:** "Hangman".
 
 ## Day 1: "Band name generator", "Username generator"
 
@@ -450,6 +451,73 @@ while not at_goal():
         while not front_is_clear():
             turn_left()
     move()
+```
+
+---
+
+## Day 7: "Hangman"
+
+### #12 Bootcamp day project: "Hangman".
+
+
+_**Briefly:**_
+
+Hangman is a quick and easy game for at least two people.  
+One player, the "host," makes up a secret word, while the other player tries to guess the word by asking what letters it contains.  
+However, every wrong guess brings them one step closer to losing. 
+
+Hangman game ruls in [the link.](https://www.wikihow.com/Play-Hangman)
+
+```python
+# Import all you need.
+from hangman_words import word_list
+from hangman_art import stages
+import random
+
+# Assign all variables.
+blanked_list = []
+game_over = False
+stage_index = 5
+
+# Start the game by choosing a random word.
+random_word = random.choice(word_list)
+
+# Create a blank list with empty spaces instead of letters. 
+for n in range(len(random_word)):
+    blanked_list += "_"
+    
+# Show the user the blank list of the word.
+print(blanked_list)
+
+# Create the main loop and ask the user to guess a letter.
+while not game_over:
+    letter = input("Please type in a letter: ").lower()
+    
+# Inform the user if they already chose the letter before.
+    if letter in blanked_list:
+        print(f"You have already chosen the letter '{letter}'. Try again!")
+        
+# Conditions when the user chooses the wrong letter.
+    if letter not in random_word:
+        print(stages[stage_index])
+        print(f"'{letter}' is not in the word.")
+        print(blanked_list)
+        stage_index -= 1
+        
+# Conditions when the user chooses the proper letter.
+# Replace blanked places with letters.
+    for n in range(len(random_word)):
+        if letter == random_word[n]:
+            blanked_list[n] = letter
+            print(blanked_list)
+            
+# Game over conditions.
+    if "_" not in blanked_list:
+        game_over = True
+        print("You win!")
+    if stage_index < 0:
+        game_over = True
+        print("You lose!")
 ```
 
 ---
