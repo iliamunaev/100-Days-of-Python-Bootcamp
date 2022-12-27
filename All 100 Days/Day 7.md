@@ -341,3 +341,8 @@ while not game_over:
 _PS: the most last step, which allows the user decides whether to continue playing the game or quit, was not covered by the final code._
 
 ---
+
+[> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
+[> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
+
+[DAY 6 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%206.md)
