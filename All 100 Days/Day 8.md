@@ -11,7 +11,8 @@ In cryptography, a Caesar cipher, the shift cipher, is one of the simplest and m
 More about Caesar cipher algorithm in [the link.](https://en.wikipedia.org/wiki/Caesar_cipher)
 
 <img src="https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/Caesar_cipher_shift.png" width=70% height=70%>
-*_Picture from <https://en.wikipedia.org/wiki/Caesar_cipher>_*
+
+_Picture from https://en.wikipedia.org/wiki/Caesar_cipher_
 
 > ### Step 1: Plan the game structure.
 
@@ -151,7 +152,7 @@ def encrypt(user_text, user_shift):
 # Use % modulo.
             new_character = new_character % 26
             text_output += alphabet[new_character]
-     print(f"The encoded text is: '{cipher_text}'.")
+     print(f"The encoded text is: {cipher_text}.")
 ```
 
 ```python
@@ -196,7 +197,7 @@ def caesar(typed_message, expected_shift, method):
                     text_output += alphabet[new_character]
 
 # Common print output for both results.
-    print(f"The {method}d text is: '{text_output}'.")
+    print(f"The {method}d text is: {text_output}.")
     
 caesar(typed_message=text, expected_shift=shift, method=direction)
 ```
@@ -244,7 +245,7 @@ def caesar(typed_message, expected_shift, method):
         else:
             text_output += character
 
-    print(f"The {method}d text is: '{text_output}'.")
+    print(f"The {method}d text is: {text_output}.")
     
     
 caesar(typed_message=text, expected_shift=shift, method=direction)
@@ -305,7 +306,7 @@ def caesar(typed_message, expected_shift, method):
         else:
             text_output += character
 
-    print(f"The {method}d text is: '{text_output}'.")
+    print(f"The {method}d text is: {text_output}.")
 
 
 should_end = False
