@@ -1,4 +1,4 @@
-#  **Day 8 (Part 2): "**Caesar cipher**" programming (step-by-step guide)**
+#  **Day 8 (Part 1): "**Caesar cipher**" programming (step-by-step guide)**
 
 
 
@@ -10,44 +10,31 @@ In cryptography, a Caesar cipher, the shift cipher, is one of the simplest and m
 
 More about Caesar cipher algorithm in [the link.](https://en.wikipedia.org/wiki/Caesar_cipher)
 
-pic
-
-
-
+<img src="https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/images/Caesar_cipher_shift.png" width=70% height=70%>
 *_Picture from <https://en.wikipedia.org/wiki/Caesar_cipher>_*
-
-
 
 > ### Step 1: Plan the game structure.
 
-
-
 Create a flowchart that represents the process of passing the game.
 
-
-
-pic
-
-
-
-
+<img src="https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/assets/diagrams/caesar_cipher_flowchart.png">
 
 > ### Step 2: Create an encrypt() function.
-
-
 
 _**Pre-created data:**_
 
 ```python 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 
+            'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+            'w', 'x', 'y', 'z'
+           ]
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 ```
 
-Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
-
+Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.  
 Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text. 
 
 ```python 
@@ -83,14 +70,9 @@ Call the encrypt function and pass in the user inputs. You should be able to tes
 encrypt(user_text=text, user_shift=shift)
 ```
 
-
-
 > ### Step 3: Create a decrypt() function.
 
-
-
-Create a different function called 'decrypt' that takes the 'text' and 'shift' as inputs.
-
+Create a different function called 'decrypt' that takes the 'text' and 'shift' as inputs.  
 Inside the 'decrypt' function, shift each letter of the 'text' *backwards* in the alphabet by the shift amount and print the decrypted text.
 
 ```python
@@ -111,14 +93,9 @@ def decrypt(user_text, user_shift):
 decrypt(cipher_text=text, decoded_shift=shift)
 ```
 
-
-
 > ### Step 4:  Call the functions.
 
-
-
-Check if the user wants to encrypt or decrypt the message by checking the 'direction' variable. 
-
+Check if the user wants to encrypt or decrypt the message by checking the 'direction' variable.  
 Then call the correct function based on that 'direction' variable. You should be able to test the code to encrypt and decrypt a message.
 
 ```python 
@@ -128,11 +105,7 @@ else:
     decrypt(cipher_text=text, decoded_shift=shift)
 ```
 
-
-
 > ### Step 5: Combine encrypt() and decrypt() functions in one code.
-
-
 
 ```python
 def encrypt(user_text, user_shift):
@@ -165,11 +138,7 @@ else:
 
 ```
 
-
-
 > ### Step 6: Replace a part of the code with % modulo.
-
-
 
 ```python
 def encrypt(user_text, user_shift):
@@ -184,8 +153,6 @@ def encrypt(user_text, user_shift):
             text_output += alphabet[new_character]
      print(f"The encoded text is: '{cipher_text}'.")
 ```
-
-
 
 ```python
 def decrypt(cipher_text, decoded_shift):
@@ -202,15 +169,9 @@ def decrypt(cipher_text, decoded_shift):
      print(f"The decoded text is {decoded_text}")
 ```
 
-
-
 > ### Step 7: Combine encrypt() and decrypt() into a single caesar() function.
 
-
-
 Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
-
-
 
 ```python
 # Arrange new names for variables. 
@@ -240,11 +201,7 @@ def caesar(typed_message, expected_shift, method):
 caesar(typed_message=text, expected_shift=shift, method=direction)
 ```
 
-
-
 > ### Step 8: Allow the user to use other symbols.
-
-
 
 Those symbols will not be ciphered.
 
@@ -259,11 +216,7 @@ for character in typed_message:
             text_output += character
 ```
 
-
-
 > ### Step 9: Deploy the new part of the code into the caesar() function.
-
-
 
 ```python
 def caesar(typed_message, expected_shift, method):
@@ -297,11 +250,7 @@ def caesar(typed_message, expected_shift, method):
 caesar(typed_message=text, expected_shift=shift, method=direction)
 ```
 
-
-
 > ### Step 10: Restart possibility.
-
-
 
 Allow the user to restart "Caesar cipher".
 
@@ -323,15 +272,15 @@ while not should_end:
         print("See you!")
 ```
 
-
-
 > ### Step 12: Final code.
 
 Combine all codes into the final code. 
 
 ```python
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
-            'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 
+            'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+            'w', 'x', 'y', 'z'
+           ]
 
 
 def caesar(typed_message, expected_shift, method):
@@ -373,3 +322,16 @@ while not should_end:
         should_end = True
         print("See you!")
 ```
+
+---
+
+### Resources:
+
+<https://en.wikipedia.org/wiki/Caesar_cipher>  
+
+---
+
+[> to Glossary](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/Glossary.md)  
+[> to all 100 projects](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/100%20projects%20in%20one%20file.md)
+
+[DAY 7 <](https://github.com/iliamunaev/100-Days-of-Python-Bootcamp/blob/main/All%20100%20Days/Day%207.md)
