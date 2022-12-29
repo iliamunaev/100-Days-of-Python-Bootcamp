@@ -62,7 +62,7 @@ def encrypt(user_text, user_shift):
 # Arrange a new variable that contains ciphered characters.
         cipher_text += new_letter
     
-    print(f"The encoded text is: '{cipher_text}'.")
+    print(f"The encoded text is: {cipher_text}.")
 ```
 
 Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message.
@@ -118,7 +118,7 @@ def encrypt(user_text, user_shift):
             letter_index = letter_index - len(alphabet) - 1
         new_letter = alphabet[letter_index]
         cipher_text += new_letter
-    print(f"The encoded text is: '{cipher_text}'.")
+    print(f"The encoded text is: {cipher_text}.")
 
 def decrypt(cipher_text, decoded_shift):
     decoded_text = ""
