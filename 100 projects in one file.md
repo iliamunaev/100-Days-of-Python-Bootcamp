@@ -6,7 +6,7 @@
 >**Day 4:** "Hide the treasure", "Rock, Paper, Scissors".  
 >**Day 5:** "Password Generator".  
 >**Day 6:** "Maze".  
->**Day 7:** "Hangman".
+>**Day 7:** "Hangman".  
 >**Day 8:** "Caesar cipher".
 
 ## Day 1: "Band name generator", "Username generator"
@@ -517,7 +517,7 @@ while not game_over:
         print("You lose!")
 ```
 
-## Day 8:** "Caesar cipher".
+## Day 8: "Caesar cipher".
 
 ### #13 Bootcamp day project: "Caesar cipher".
 
