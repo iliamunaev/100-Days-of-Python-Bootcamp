@@ -7,6 +7,7 @@
 >**Day 5:** "Password Generator".  
 >**Day 6:** "Maze".  
 >**Day 7:** "Hangman".
+>**Day 8:** "Caesar cipher".
 
 ## Day 1: "Band name generator", "Username generator"
 
@@ -514,6 +515,78 @@ while not game_over:
     if stage_index < 0:
         game_over = True
         print("You lose!")
+```
+
+## Day 8:** "Caesar cipher".
+
+### #13 Bootcamp day project: "Caesar cipher".
+
+
+_**Briefly:**_
+
+In cryptography, a Caesar cipher, the shift cipher, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plain text is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+
+More about Caesar cipher algorithm in [the link.](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+```python
+# Assign a list of characters which will be ciphered.
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 
+            'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+            'w', 'x', 'y', 'z'
+           ]
+
+# Create the main function.
+def caesar(typed_message, expected_shift, method):
+
+# Assing a variable for the final printed output message.
+    text_output = ""
+
+# Create a for loop to extract the index of each character.
+    for character in typed_message:
+
+# Check the presence of the character in the input text.
+# Other characters than those in the alphabet list are not ciphered. 
+        if character in alphabet:
+
+# Extract the index of each character.
+            if method == "encode":
+                character_index = alphabet.index(character)
+
+# Assign a variable for a new index of each character.
+                new_character = character_index + expected_shift
+
+# Until a new index is out of the range of the alphabet list, use the while loop.
+                while new_character > 25:
+                    new_character = new_character % 26
+
+# Assign a variable that contains ciphered characters.
+                text_output += alphabet[new_character]
+            else:
+                character_index = alphabet.index(character)
+                new_character = character_index - expected_shift
+                while new_character < 0:
+                    new_character = new_character % 26
+                text_output += alphabet[new_character]
+        else:
+            text_output += character
+    print(f"The {method}d text is: {text_output}.")
+
+
+# Assign the condition if the user wants to restart.
+should_end = False
+while not should_end:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+
+    
+    caesar(typed_message=text, expected_shift=shift, method=direction)
+
+# Ask the user if they want to restart.
+    restart = input("Type 'yes' if you want to restart again. Otherwise type 'no'.\n").lower()
+    if restart == "no":
+        should_end = True
+        print("See you!")
 ```
 
 ---
